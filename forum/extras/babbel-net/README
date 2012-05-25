@@ -1,0 +1,10 @@
+If you don't have a own newsserver, or your groups are empty because no one
+likes to write anything, you may want to use the babbel-net groups.
+
+This groups are german only! Only use them an sites in german language.
+
+in config.inc.php, set $server="babbel.gartenhaus.net"
+and copy the groups.txt in this directory to your newsportal installation
+directory.
+
+The Website of the Babbel-Net: http://babbel.gartenhaus.net

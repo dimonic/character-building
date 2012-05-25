@@ -1,0 +1,18 @@
+Here are some files that help you to setup the framed version of NewsPortal.
+
+1. Copy all files in this directory to your main NewsPortal directory
+
+2. Uncomment the commented lines in the frames-sertion in your
+   config.inc.php
+
+3. add/change the lines in the first section of config.inc.php:
+ $file_thread="thread_frameset.php";
+ $file_framethread="thread.php";
+
+Now threading should run, but you should change the layout of your files a
+bit. For example, thread.php has this "write" and "newsgroups" buttons, that
+you could remove, or you could also make changes in your tail.inc
+
+The frames-support and the files in this directory are just examples, how
+you could implement frames-support. They will not work right out of the box
+without changes in layout.

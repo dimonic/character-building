@@ -1,0 +1,353 @@
+<? include("header.html"); ?>
+
+<H2>Races</H2>
+
+<h3>The Problems</h3>
+<p>
+Dungeons and Dragons standard races make a lot of difference to
+starting characters but these differences quickly fade into
+insignificance after a few levels.</p>
+
+<p>Many more exotic races have level adjustment penalties for the
+significant initial benefits they give. However, this can present
+problems for adventures for low levels, and at high levels these races
+become underpowered because of the level penalty.</p>
+
+<p>Certain races take attribute penalties (particularly charisma) to
+reflect an attitude rather then an actual lack of the attribute. This
+has unfortunate consequences in certain skills which the race aught to
+be good at, for example, for dwarves, use magical device, or intimdate
+for half-orcs.  </p>
+
+
+<P>
+Unearthed Arcana gives a couple of interesting ideas here: one is to
+buy off the expensive level adjustments progressively during the
+character's career. This works because of the self correcting nature
+of the DnD XP system. The first problem is never really addressed, but
+the section on Racial Paragons provides an excellent clue which can be
+the starting point for solving both problems, along with the racial
+progression ideas spelled out in the monster manuals.</p>
+
+<P>
+What I propose is to slightly boost all 0LA races, to allow 1LA races
+to start at par. Then to address the growing irrelevance of race as
+one advances in level by having other benefits kick in as the
+character goes up in level.  For races penalized in charisma, I impose
+penalties on specific skills instead.</p>
+
+  <h4>Aasimar.</h4>
+
+    <p>Aasimars represent the remnants of an ancient proud lineage.
+    An Aasimar character may begin play as level 1 with no ECL
+    adjustment.</p>
+
+
+<table>
+<CAPTION><STRONG>Table 1:</STRONG>
+Aasimar Racial benefits</CAPTION>
+<TR><TH ALIGN="LEFT">Level</TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Special</TH>
+</TR>
+<TR><TD ALIGN="LEFT">1st</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Normal aasimar racial benefits, no level adjustment</TD>
+</TR>
+<TR><TD ALIGN="LEFT">5th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>+4 Spot and Listen</TD>
+</TR>
+<TR><TD ALIGN="LEFT">10th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Improved darkvision (+30 ft), daylight 3/day</TD>
+</TR>
+<TR><TD ALIGN="LEFT">15th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Cha +2</TD>
+</TR>
+</TABLE>
+
+<h4>Drow</h4>
+
+
+<table>
+<CAPTION><STRONG>Table 2:</STRONG>
+Drow Racial benefits</CAPTION>
+<TR><TH ALIGN="LEFT">Level</TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Special</TH>
+</TR>
+<TR><TD ALIGN="LEFT">1st</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Normal drow racial benefits</TD>
+</TR>
+<TR><TD ALIGN="LEFT">5th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Improved spell-like abilities</TD>
+</TR>
+<TR><TD ALIGN="LEFT">10th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Improved darkvision (+30 ft), light sensistivity</TD>
+</TR>
+<TR><TD ALIGN="LEFT">15th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Dex +2</TD>
+</TR>
+</TABLE>
+
+  <h4>Dwarves</h4>
+
+    <p>Do not receive -2 Charisma penalty, instead receive -2 penalty on
+    Diplomacy, Gather Information and Handle Animal checks. (I don't see
+    why they shouldn't be good at Use Magic Device, or Intimidate).</p>
+
+
+<table>
+<CAPTION><STRONG>Table 3:</STRONG>
+Dwarf Racial benefits</CAPTION>
+<TR><TH ALIGN="LEFT">Level</TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Special</TH>
+</TR>
+<TR><TD ALIGN="LEFT">1st</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Normal dwarven racial benefits, <SPAN  CLASS="textit">except do not
+receive -2 Charisma penalty, instead receive -2 penalty on Diplomacy,
+Gather Information and Handle Animal checks, +2 Wis</TD>
+</TR>
+<TR><TD ALIGN="LEFT">5th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Craft expertise, improved stonecunning</TD>
+</TR>
+<TR><TD ALIGN="LEFT">10th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Improved darkvision (+30 ft), save bonus +1</TD>
+</TR>
+<TR><TD ALIGN="LEFT">15th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Con +2</TD>
+</TR>
+</TABLE>
+
+  <h4>Elves</h4>
+
+    <p>Elves are effectively immortal: they do not age (in game terms)
+    past middle age, and do not die of "natural causes". (In adventuring
+    terms this is just flavour anyway).</p>
+
+    <p>Elves gain an additional <b>+2 Int</b>. Other than this,
+    they are already good enough.</p>
+
+
+
+<table>
+<CAPTION><STRONG>Table 4:</STRONG>
+Elf Racial benefits</CAPTION>
+<TR><TH ALIGN="LEFT">Level</TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Special</TH>
+</TR>
+<TR><TD ALIGN="LEFT">1st</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Normal elven racial benefits, immortal, +2 Int</TD>
+</TR>
+<TR><TD ALIGN="LEFT">5th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Elfsight (+4 search and spot, 3x low light), resist enchantments +2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">10th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Weapon Focus with an elven weapon</TD>
+</TR>
+<TR><TD ALIGN="LEFT">15th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Int +2</TD>
+</TR>
+</TABLE>
+
+  <h4>Gnomes</h4>
+
+    <p>May treat <i>either</i> Illusionist or Bard as favoured
+    classes.</p>
+
+    <p>Gnomes choose one bonus feats from either <b>magical
+    aptitude</b>, <b>nimble fingers</b>, or <b>artistic
+    temperament</b>, and gain <b>+2 Cha</b></p>.
+
+
+<table>
+<CAPTION><STRONG>Table 5:</STRONG>
+Gnome Racial benefits</CAPTION>
+<TR><TH ALIGN="LEFT">Level</TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Special</TH>
+</TR>
+<TR><TD ALIGN="LEFT">1st</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Normal gnome racial benefits, +2 Cha, Bonus feat from magical
+aptitude, nimble fingers, or artisitic temperament</TD>
+</TR>
+<TR><TD ALIGN="LEFT">5th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Illusion aptitude, keen senses</TD>
+</TR>
+<TR><TD ALIGN="LEFT">10th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180><SPAN  CLASS="textit">mirror image</TD>
+</TR>
+<TR><TD ALIGN="LEFT">15th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Cha +2</TD>
+</TR>
+</TABLE>
+
+  <h4>Half-elves</h4>
+
+    <p>Half-elves benefit from their divided ancestry, and their human
+    flexibility. Gain <b>+2 Cha</b>: they get along with most races
+    and they may take a <b>bonus feat</b> at first level.</p>
+
+
+<table>
+<CAPTION><STRONG>Table 6:</STRONG>
+Half-elf Racial benefits</CAPTION>
+<TR><TH ALIGN="LEFT">Level</TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Special</TH>
+</TR>
+<TR><TD ALIGN="LEFT">1st</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Normal half-elf racial benefits, bonus feat, +2 Cha</TD>
+</TR>
+<TR><TD ALIGN="LEFT">5th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Illusion aptitude, keen senses</TD>
+</TR>
+<TR><TD ALIGN="LEFT">10th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180><SPAN  CLASS="textit">mirror image</TD>
+</TR>
+<TR><TD ALIGN="LEFT">15th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Cha +2</TD>
+</TR>
+</TABLE>
+
+  <h4>Half-orcs</h4>
+
+    <p>Do <i>not</i> get -2 penalty to charisma, instead, get -2
+    racial modidier on diplomacy, use magic device, and gather
+    information checks, and a +2 racial bonus to intimidate checks</p>
+
+    <p>Half-orcs receive an additional <b>+2 Con</b> bonus.
+
+
+<table>
+<CAPTION><STRONG>Table 7:</STRONG>
+Half-orc Racial benefits</CAPTION>
+<TR><TH ALIGN="LEFT">Level</TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Special</TH>
+</TR>
+<TR><TD ALIGN="LEFT">1st</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Normal half-orc racial benefits, <SPAN  CLASS="textit">except do not get -2
+penalty to charisma, instead, get -2 racial modidier on diplomacy, use
+magic device, and gather information checks, and a +2 racial bonus to
+intimidate checks, +2 Con</TD>
+</TR>
+<TR><TD ALIGN="LEFT">5th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Divided ancestry, monstrous mein</TD>
+</TR>
+<TR><TD ALIGN="LEFT">10th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>rage 1/day</TD>
+</TR>
+<TR><TD ALIGN="LEFT">15th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Str +2</TD>
+</TR>
+</TABLE>
+
+
+  <h4>Halflings</h4>
+
+    <p>Halflings are agile, their <b>climb, jump</b> and <b>move
+    silently</b> bonus increases to <b>+3</b>. They may also be
+    surprisingly tough, granting them the <b>endurance</b> feat,
+    <em>or</em> they are tunnel dwellers and have <b>low light
+    vision</b>.</p>
+
+
+<table>
+<CAPTION><STRONG>Table 8:</STRONG>
+Halfling Racial benefits</CAPTION>
+<TR><TH ALIGN="LEFT">Level</TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Special</TH>
+</TR>
+<TR><TD ALIGN="LEFT">1st</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Normal halfling racial benefits, athletic prowess +3, either endurance 
+or low light vision</TD>
+</TR>
+<TR><TD ALIGN="LEFT">5th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Athletic prowess +4, save bonus +1</TD>
+</TR>
+<TR><TD ALIGN="LEFT">10th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Thrown weapon mastery (+2 damage)</TD>
+</TR>
+<TR><TD ALIGN="LEFT">15th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Dex +2</TD>
+</TR>
+</TABLE>
+
+ <h4>Humans</h4>
+
+    <p>Humans adapt to almost any circumstance, and no two are exactly
+    alike.</p>
+
+
+<table>
+<CAPTION><STRONG>Table 9:</STRONG>
+Human Racial benefits</CAPTION>
+<TR><TH ALIGN="LEFT">Level</TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Special</TH>
+</TR>
+<TR><TD ALIGN="LEFT">1st</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Normal human racial benefits, +2 to any ability</TD>
+</TR>
+<TR><TD ALIGN="LEFT">5th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Adaptive learning</TD>
+</TR>
+<TR><TD ALIGN="LEFT">10th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Bonus feat</TD>
+</TR>
+<TR><TD ALIGN="LEFT">15th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Ability boost +2</TD>
+</TR>
+</TABLE>
+
+<h4>Orcs</h4>
+<p>Like cockroaches, orcs seem to survive in any environment despite the best
+intentions of other creatures to utterly wipe them out.</p>
+
+<table>
+<CAPTION><STRONG>Table 10:</STRONG>
+Orc Racial benefits</CAPTION>
+<TR><TH ALIGN="LEFT">Level</TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Special</TH>
+</TR>
+<TR><TD ALIGN="LEFT">1st</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Normal orc racial benefits</TD>
+</TR>
+<TR><TD ALIGN="LEFT">5th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Improved darvision (+30 ft), no light sensitivity</TD>
+</TR>
+<TR><TD ALIGN="LEFT">10th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Elf slayer</TD>
+</TR>
+<TR><TD ALIGN="LEFT">15th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Str +2</TD>
+</TR>
+</TABLE>
+
+  <h4>Tieflings</h4>
+
+    <p>Something not quite right runs in the veins of these
+    characters, but they may start as first level without ECL
+    adjustment.</p>
+
+
+<table>
+<CAPTION><STRONG>Table 11:</STRONG>
+Tiefling Racial benefits</CAPTION>
+<TR><TH ALIGN="LEFT">Level</TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Special</TH>
+</TR>
+<TR><TD ALIGN="LEFT">1st</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Normal tiefling racial benefits</TD>
+</TR>
+<TR><TD ALIGN="LEFT">5th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Improved resistance</TD>
+</TR>
+<TR><TD ALIGN="LEFT">10th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180><SPAN  CLASS="textit">darkness, +4 bluff and hide</TD>
+</TR>
+<TR><TD ALIGN="LEFT">15th</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=180>Dex +2</TD>
+</TR>
+</TABLE>
+
+  <h4>Other races</h4>
+
+    <p>Consult DM for world specific choices, demi-humans etc</p>
+
+<
+
+<? include("footer.html"); ?>

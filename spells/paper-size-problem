@@ -1,0 +1,20 @@
+edit
+
+/usr/share/texmf-tetex/dvips/config/config.ps
+
+% 0 0 595 842 is the right bounding box that most applications expect
+% for A4.  Since dvips always rounds up, choose something slightly smaller.
+
+% @ A4size 594.99bp 841.99bp
+% @+ ! %%DocumentPaperSizes: a4
+% @+ %%PaperSize: A4
+
+@ letterSize 8.5in 11in
+@+ ! %%DocumentPaperSizes: Letter
+
+@ letter 8.5in 11in
+@+ ! %%DocumentPaperSizes: Letter
+@+ %%BeginPaperSize: Letter
+@+ letter
+@+ %%EndPaperSize
+

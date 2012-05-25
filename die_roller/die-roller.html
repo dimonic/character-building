@@ -1,0 +1,104 @@
+<html>
+<head>
+  <title>Dice Roller</title>
+  <link rel="stylesheet" type=text/css href="../styles/table.css" title="php-style">
+</head>
+<body>
+
+
+<script language="JavaScript1.2">
+//<!--
+
+function rolldice() {
+
+  var routput = document.form1.runningtotal.value + "("; 
+  var rtotal = 0;
+  var rnum;
+  var rmultiplier = document.form1.multiplier.value;
+  if (document.form1.multiplier.value == "") {
+    rmultiplier = 1;
+  }
+  for (var i = 1; i <= rmultiplier; i++) {
+    rnum = Math.floor(Math.random() * document.form1.die.value) + 1;
+    rtotal = rtotal + rnum;
+    if (i > 1) {
+      routput = routput + "+";
+    }
+    routput = routput + rnum;
+  }
+  rtotal = rtotal + Math.floor(document.form1.bonus.value);
+  routput = routput + ")";
+  if (document.form1.bonus.value != "") {
+    routput = routput + "+" + document.form1.bonus.value;
+  }
+  routput = routput + "=" + rtotal + "\n";
+  document.form1.runningtotal.value = routput; 
+}
+
+function printRolls() {
+  printWin = open(null, "DieRolls", "status=no,resizeable=no");
+  printWin.document.write(document.form1.runningtotal.value + "\n");
+  printWin.print();
+  printWin.close();
+}
+
+//-->
+</script> 
+
+<form method="post" action="" name="form1">
+<table border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr> 
+  <th>Die Roller</th>
+</tr>
+<tr>
+  <td>
+    <table align="left" border="0">
+    <tbody>
+    <tr> 
+      <th>
+	<input name="multiplier" size="3" type="text">d
+        <select name="die">d
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="6" selected>6</option>
+	  <option value="8">8</option>
+	  <option value="10">10</option>
+	  <option value="12">12</option>
+	  <option value="20">20</option>
+	  <option value="100">100</option>
+	</select>+
+        <input name="bonus" size="3" type="text">
+      </th>
+      <td> 
+        <input type="button" value="Roll dice" onclick="rolldice();">
+      </td>
+    </tr>
+    <tr> 
+      <td colspan="2"> 
+	<textarea name="runningtotal" rows="10" cols="30"></textarea>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <input type="button" value="Print" onClick="printRolls();">
+      </td>
+      <td>
+        <input name="Reset" value="Reset" type="reset">
+      </td>
+    </tr>
+</tbody>
+</table>
+</form>
+
+</td>
+</tr>
+</tbody></table>
+
+<img src="../images/dnd_terminator.gif">
+
+Copyright © 2004 Dominic Amann, 2001 Kevin Savage, all rights reserved.
+
+</body>
+</html>

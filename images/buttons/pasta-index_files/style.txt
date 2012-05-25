@@ -1,0 +1,76 @@
+BODY { scrollbar-base-color:#669900 }
+
+P
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+BLOCKQUOTE
+{
+    FONT-SIZE: 12px;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, sans-serif
+}
+A
+{
+    FONT-WEIGHT: 800;
+    FONT-SIZE: 12px;
+    COLOR: #800000;
+    FONT-FAMILY: Arial, sans-serif;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    TEXT-DECORATION: underline
+}
+.lh20
+{
+    LINE-HEIGHT: 20pt
+}
+.lh15
+{
+    LINE-HEIGHT: 15pt
+}
+.smallbold
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TD
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TEXTAREA
+{
+    CLEAR: none;
+    BORDER-RIGHT: maroon dashed;
+    BORDER-TOP: maroon dashed;
+    MARGIN-TOP: 0px;
+    BORDER-LEFT: maroon dashed;
+    WIDTH: auto;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: maroon dashed;
+    HEIGHT: auto
+}
+UL
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 4px;
+    FONT-SIZE: 12px;
+    MARGIN-LEFT: 12px;
+    MARGIN-RIGHT: 0px;
+    LIST-STYLE-TYPE: circle
+}
+.bottomtext
+{
+    FONT-WEIGHT: bold;
+    COLOR: white
+}
+.smalllink
+{
+    FONT-SIZE: 10px;
+    COLOR: #800000;
+    FONT-FAMILY: Arial, Helvetica
+}

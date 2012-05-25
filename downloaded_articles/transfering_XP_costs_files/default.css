@@ -1,0 +1,79 @@
+.hasbronavTop {color: #ffffff;font-size:11px;text-decoration:none;font-family : trebuchet ms,copperplate,verdana, arial, helvetica, sans serif}
+A.hasbronavTop:Hover {color : #cc0000}
+A.hasbronavTop:active {color:#ffffff}
+.menuItem {color: #000000;font-size:10px;text-decoration:none;font-family : verdana, arial, helvetica, sans serif}
+A.menuItem:Hover {color : #cc0000}
+
+a.navTop {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration:none}
+a.navTop:hover {color: #FF33FF}
+a.navTop:link{color:#ffffff}
+a.navTop:visited{color:#ffffff}
+
+.breadcrumb {color: #000000;font-size:12px;font-family : arial, helvetica, sans serif}
+a.breadcrumb:hover {color : #cc0000}
+.linecolor {color : #000000}
+
+.legal { font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+.fplegal { font-family: Arial, Helvetica, sans-serif; font-size: 9px; color:#A5B9D1; text-decoration:none}
+
+.blackbg { color: #02CDF5;font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+
+.boxhead {color: #ffffff ;font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold}
+.boxtext1 {color: #660099 ;font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold}
+
+a.navTopSmall {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #FFFFFF; text-decoration:none}
+a.navTopSmall:hover {color: #FF33FF}
+a.navTopSmall:link{color:#ffffff}
+a.navTopSmall:visited{color:#ffffff}
+
+.reallysmall { font-family: Arial, Helvetica, sans-serif; font-size: 9px; text-decoration:none}
+.aclinks { font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-decoration:none; font-weight: bold}
+.acheader { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#cc0000; text-decoration:none; font-weight: bold}
+A.acheader:hover {color:#000000}
+
+.big { font-size: 16px; text-decoration: none; font-weight: bold; }
+
+.morelink { font-family: Arial, Helvetica, sans-serif; font-size: 10px; text-decoration:none}
+.oracletext { font-family: Arial, Helvetica, sans-serif; font-size: 11px; text-decoration:none}
+.tabletext {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-decoration:none}
+
+.smalltabletext {  font-family: Arial, Helvetica, sans-serif; font-size: 8px; text-decoration:none}
+
+.tinywhite {  font-family: Arial, Helvetica, sans-serif; font-size: 9px; text-decoration:none; color : #ffffff}
+.smallwhite {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-decoration:none; color : #ffffff}
+A.smallwhite:hover { color:#163f70}
+
+.redtext { color:#ff0000}
+
+.footercell { background: #163f70}
+.footercell2 { background: #98bddf}
+
+.wnlink { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#336699; text-decoration:none; font-weight:bold}
+.wnheader { font-family: Arial, Helvetica, sans-serif; font-size: 15px; color:#336699; text-decoration:none; font-weight:bold}
+A.wnlink:hover { color:#163f70}
+A.wnheader:hover { color:#163f70}
+
+.wndate { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color:#000000; text-decoration:none}
+
+.buttonTreatment
+{font-family:Verdana,Arial;font-size:8pt;color:black;cursor:hand;background-color:#CECEdd;text-decoration:none;
+border:black solid 1px;padding-right:2px;padding-left:2px;padding-bottom:2px
+}
+
+.revised {color: #ff0000; }
+
+.h1 {color: #000000;font-size:31px;font-weight:bold;font-family : arial, helvetica, sans serif}
+.h2 {color: #000000;font-size:25px;font-weight:bold;font-family : arial, helvetica, sans serif}
+.h3 {color: #000000;font-size:21px;font-weight:bold;font-family : arial, helvetica, sans serif}
+.h4 {color: #000000;font-size:17px;font-weight:bold;font-family : arial, helvetica, sans serif}
+.h5 {color: #000000;font-size:12px;font-weight:bold;font-family : arial, helvetica, sans serif}
+.h6 {color: #000000;font-size:9px;font-weight:bold;font-family : arial, helvetica, sans serif}
+
+.size0 {color: #000000;font-size:9px;font-family : arial, helvetica, sans serif}
+.size1 {color: #000000;font-size:10px;font-family : arial, helvetica, sans serif}
+.size2 {color: #000000;font-size:12px;font-family : arial, helvetica, sans serif}
+.size3 {color: #000000;font-size:15px;font-family : arial, helvetica, sans serif}
+.size4 {color: #000000;font-size:19px;font-family : arial, helvetica, sans serif}
+.size5 {color: #000000;font-size:23px;font-family : arial, helvetica, sans serif}
+.size6 {color: #000000;font-size:30px;font-family : arial, helvetica, sans serif}
+.size7 {color: #000000;font-size:42px;font-family : arial, helvetica, sans serif}

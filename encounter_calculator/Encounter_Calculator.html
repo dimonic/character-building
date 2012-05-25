@@ -1,0 +1,718 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><!--last modified on Wednesday, January 22, 2003 02:36 PM -->
+	<meta http-equiv="Content-Type" content="text/html;CHARSET=iso-8859-1">
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta content="FrontPage.Editor.Document" name="ProgId">
+<script>
+	var aTreasure = new Array(300, 600, 900, 1200, 1600, 2000, 2600, 3400, 4500, 5800, 7500, 
+							9800, 13000, 17000, 22000, 28000, 36000, 47000, 61000, 80000, 
+							87000, 96000, 106000, 116000, 128000, 141000, 155000, 170000,
+							187000, 206000, 227000, 249000, 274000, 302000, 332000, 365000,
+							401000, 442000, 486000, 534000);
+
+	function mFilterInputLevels(strX)
+	{
+		if (strX == "1/2") return 1/2;
+		if (strX == "1/3") return 1/3;
+		if (strX == "1/4") return 1/4;
+		if (strX == "1/6") return 1/6;
+		if (strX == "1/8") return 1/8;
+		if (strX == "1/10") return 1/10;
+		// just a few filler values to deal with oddities.
+		// these shouldn't come up... but they might.
+		if (strX == "2/3") return 2/3;
+		if (strX == "3/4") return 3/4;
+		if (strX == "1/5") return 1/5;
+		if (strX == "1/9") return 1/9;
+		return parseFloat(strX);
+	}
+
+	function RoundOnePlace(x)
+	{
+		return Math.round(x * 10) / 10;
+	}
+
+	function Log2(x)
+	{
+		return Math.LOG2E * Math.log(x);
+	}
+	
+	function mCRtoPL(x)
+	{
+		var iReturn = 0;
+		if (x < 2) iReturn = x;
+		else iReturn = Math.pow(2, (x/ 2));
+		return iReturn;
+	}
+
+	function mPLtoCR(x)
+	{
+		var iReturn = 0;
+		if (x < 2) iReturn = x;
+		else iReturn = 2 * Log2(x);
+		return iReturn;
+	}
+	
+	function mDifference(x, y)
+	{
+		return 2 * (Log2(x) - Log2(y));
+	}
+	
+	function mDifficulty(x)
+	{
+		var strReturn = "Unknown";
+		if (x < -3) strReturn = "Trivial";
+		else if (x < -1) strReturn = "Easy";
+		else if (x <= 1) strReturn = "Challenging";
+		else if (x <= 5) strReturn = "Very Difficult";
+		else if (x <= 8) strReturn = "Deadly";
+		else strReturn = "0% - Obscene";
+		return strReturn;	
+	}
+	
+	function mPercentEnc(x)
+	{
+	// What percentage of an adventures encounters should be at this EL.
+		var p=0;
+		if (x < 0) p = 50 + (x * 20);
+		else if (x > 5) p = 15 - ((x-5) * 5);
+		else p = 50 - (x * 7);
+
+		if (x <=8 && x > 5 && p <=2) p = 2; // special case guess.
+		if (p < 0) p = 0;
+		
+		p = Math.round(p); // smooth it out a bit.
+		return p +"%";
+	}
+
+	function mAdvice(x)
+	{
+		var strReturn = "Unknown";
+		if (x < -3) strReturn = "Why Waste Your Time?";
+		else if (x < -1) strReturn = "Dispatch Them Quickly.";
+		else if (x <= 1) strReturn = "Keep On Your Toes.";
+		else if (x <= 5) strReturn = "Pull Out All The Stops.";
+		else if (x <= 8) strReturn = "Run Away!";
+		else strReturn = "Start making new characters";
+		return strReturn;	
+	}
+	
+	function mEven(x)
+	{
+		var iReturn = 2 * parseInt(x/2);
+		if (x < iReturn) iReturn += -2;
+		else if (x > iReturn) iReturn += 2;
+		return iReturn;
+	}
+	
+	function mExperience(x, y)
+	{
+		// x = PClevel y = monsterlevel
+		var iReturn = 0;
+		if (x < 3) x = 3;
+		if ((x <= 6) && (y <= 1)) iReturn = 300 * y;
+		else if (y < 1) iReturn = 0;
+		
+		// This formula looks nice, but 3.5 doesn't follow a smooth formula like 3.0 did.
+		else iReturn = 6.25 * x * ( Math.pow(2,mEven(7- (x-y) ) /2) ) * ( 11-(x-y) - mEven(7-(x-y)) );
+
+		// Below catches places where the formula fails for 3.5.
+		if ((y == 4) || (y == 6) || (y == 8) || (y == 10) || (y == 12) || 
+			(y == 14) ||(y == 16) ||(y == 18) ||(y == 20))
+		{
+			if (x <= 3) iReturn = 1350 * Math.pow(2,(y-4)/2);
+			else if (x == 5 && y >= 6) iReturn = 2250 * Math.pow(2,(y-6)/2);
+			else if (x == 7 && y >= 8) iReturn = 3150 * Math.pow(2,(y-8)/2);
+			else if (x == 9 && y >= 10) iReturn = 4050 * Math.pow(2,(y-10)/2);
+			else if (x == 11 && y >= 12) iReturn = 4950 * Math.pow(2,(y-12)/2);
+			else if (x == 13 && y >= 14) iReturn = 5850 * Math.pow(2,(y-14)/2);
+			else if (x == 15 && y >= 16) iReturn = 6750 * Math.pow(2,(y-16)/2);
+			else if (x == 17 && y >= 18) iReturn = 7650 * Math.pow(2,(y-18)/2);
+			else if (x == 19 && y >= 20) iReturn = 8550 * Math.pow(2,(y-20)/2);
+		}
+		if ((y == 7) || (y == 9) || (y == 11) || (y == 13) || (y == 15) || 
+			(y == 17) ||(y == 19))
+		{
+			if (x == 6) iReturn = 2700 * Math.pow(2,(y-7)/2);
+			if (x == 8 && y >= 9) iReturn = 3600 * Math.pow(2,(y-9)/2);
+			if (x == 10 && y >= 11) iReturn = 4500 * Math.pow(2,(y-11)/2);
+			if (x == 12 && y >= 13) iReturn = 5400 * Math.pow(2,(y-13)/2);
+			if (x == 14 && y >= 15) iReturn = 6300 * Math.pow(2,(y-15)/2);
+			if (x == 16 && y >= 17) iReturn = 7200 * Math.pow(2,(y-17)/2);
+			if (x == 18 && y >= 19) iReturn = 8100 * Math.pow(2,(y-19)/2);
+		}
+		
+		if (y > 20) iReturn = 2 * mExperience(x, y-2);
+		// recursion should end this in short order.
+		// This method is clean, and ensures any errors in the above
+		// formulas for 3.5 are accounted for.
+		
+		// Finally we correct for out of bounds entries, doing this last to cut space on the
+		// above formulas.
+		if (x - y > 7) iReturn = 0;
+		else if (y - x > 7) iReturn = 0;
+
+		return iReturn;
+	}
+	
+	function mDifficultyExperience(x, y, z)
+	{
+		var iReturn = 0;
+
+		if (y < 3) y = 3;
+		if ((y - z > 7) || (z - y > 7)) iReturn = 0;
+
+		else iReturn = 6.25 * ( Math.pow(2,mEven(7+x)/2))*(11+x-mEven(7+x)) / 4;
+		
+		return iReturn;
+	}
+
+	function mTreasure(x)
+	{
+		if (x > 40) x = 40; // Not a clean solution. But no idea what ELs above 20 should give.
+		x2 = parseInt(x);
+		if (x < 1) iReturn = x * aTreasure[0];
+		else if (x > x2) iReturn = aTreasure[x2-1] + (x-x2) * (aTreasure[x2] - aTreasure[x2-1]);
+		else iReturn = aTreasure[x2-1];
+		
+		return iReturn;
+	}
+	
+	function xDy (x,y)
+	{
+		return xDyPz (x,y,0);
+	}
+	
+	function xDyPz (x,y,z)
+	{
+
+		//alert (x+"d"+y+"+"+z);
+		for (x; x > 0; x--)
+		{
+			z += Math.round(Math.random() * y);
+			//alert("X: "+x+" Z: "+z);
+		}
+		//alert ("Z: "+z);
+		return z;
+	}
+	
+	function findSpotDistance(terrainType)
+	{
+		var spotDist = 0;
+		var isTxt = false;
+
+		switch (terrainType)
+		{
+			case "dpForest":
+			case "rHills":
+				spotDist = xDy (2,6) * 10 + " (2d6*10)";
+				break
+			case "spForest":
+				spotDist = xDy (3,6) * 10 + " (3d6*10)";
+				break
+			case "Moor":
+			case "DesertDunes":
+				spotDist = xDy (6,6) * 10 + " (6d6*10)";
+				break
+			case "Desert":
+				spotDist = xDy (6,6) * 20 + " (6d6*20)";
+				break
+			case "Plains":
+				spotDist = xDy (6,6) * 40 + " (6d6*40)";
+				break
+			case "mWater":
+				spotDist = xDy (1,8) * 10 + " (1d8*10)";
+				break
+			case "mpForest":
+			case "Swamp":
+				spotDist = xDy (2,8) * 10 + " (2d8*10)";
+				break
+			case "cWater":
+				spotDist = xDy (4,8) * 10 + " (4d8*10)";
+				break
+			case "gHills":
+				spotDist = xDy (2,10) * 10 + " (2d10*10)";
+				break
+			case "Mount":
+				spotDist = xDy (4,10) * 10 + " (4d10*10)";
+				break
+			case "Dungeon":
+				spotDist = "Line of sight and lighting";
+				isTxt = true;
+				break
+			case "Urban":
+				spotDist = "when event triggered";
+				isTxt = true;
+				break
+			default:
+				spotDist = "ERROR";
+				isTxt = true;
+		}
+		if (isTxt == true) return spotDist;
+		else return spotDist + " feet away";
+	}
+
+	function mCalculate()
+	{
+		var iCount = 0;
+		
+		with (document.myform)
+		{
+			var iParty1Number = parseFloat(txtParty1Number.value);
+			var iParty2Number = parseFloat(txtParty2Number.value);
+			var iParty3Number = parseFloat(txtParty3Number.value);
+			var iParty4Number = parseFloat(txtParty4Number.value);
+			var iParty5Number = parseFloat(txtParty5Number.value);
+			var iParty6Number = parseFloat(txtParty6Number.value);
+		
+			var iParty1Level = mFilterInputLevels(txtParty1Level.value);
+			var iParty2Level = mFilterInputLevels(txtParty2Level.value);
+			var iParty3Level = mFilterInputLevels(txtParty3Level.value);
+			var iParty4Level = mFilterInputLevels(txtParty4Level.value);
+			var iParty5Level = mFilterInputLevels(txtParty5Level.value);
+			var iParty6Level = mFilterInputLevels(txtParty6Level.value);
+		
+			var iMonster1Number = parseFloat(txtMonster1Number.value);
+			var iMonster2Number = parseFloat(txtMonster2Number.value);
+			var iMonster3Number = parseFloat(txtMonster3Number.value);
+			var iMonster4Number = parseFloat(txtMonster4Number.value);
+			var iMonster5Number = parseFloat(txtMonster5Number.value);
+			var iMonster6Number = parseFloat(txtMonster6Number.value);
+		
+			var iMonster1Level = mFilterInputLevels(txtMonster1Level.value);
+			var iMonster2Level = mFilterInputLevels(txtMonster2Level.value);
+			var iMonster3Level = mFilterInputLevels(txtMonster3Level.value);
+			var iMonster4Level = mFilterInputLevels(txtMonster4Level.value);
+			var iMonster5Level = mFilterInputLevels(txtMonster5Level.value);
+			var iMonster6Level = mFilterInputLevels(txtMonster6Level.value);
+		}
+
+		var iParty1Power = iParty1Number * mCRtoPL(iParty1Level);
+		var iParty2Power = iParty2Number * mCRtoPL(iParty2Level);
+		var iParty3Power = iParty3Number * mCRtoPL(iParty3Level);
+		var iParty4Power = iParty4Number * mCRtoPL(iParty4Level);
+		var iParty5Power = iParty5Number * mCRtoPL(iParty5Level);
+		var iParty6Power = iParty6Number * mCRtoPL(iParty6Level);
+		var iPartyTotalPower = (iParty1Power + iParty2Power + iParty3Power + iParty4Power + iParty5Power + iParty6Power) /4;
+		var iPartyEffectiveLevel = mPLtoCR(iPartyTotalPower);
+
+		var iPartyTotal = iParty1Number + iParty2Number + iParty3Number + iParty4Number + iParty5Number + iParty6Number;
+		iCount += iParty1Number * iParty1Level;
+		iCount += iParty2Number * iParty2Level;
+		iCount += iParty3Number * iParty3Level;
+		iCount += iParty4Number * iParty4Level;
+		iCount += iParty5Number * iParty5Level;
+		iCount += iParty6Number * iParty6Level;
+		var iPartyAverageLevel = iCount / iPartyTotal;
+
+		var iMonster1Power = iMonster1Number * mCRtoPL(iMonster1Level);
+		var iMonster2Power = iMonster2Number * mCRtoPL(iMonster2Level);
+		var iMonster3Power = iMonster3Number * mCRtoPL(iMonster3Level);
+		var iMonster4Power = iMonster4Number * mCRtoPL(iMonster4Level);
+		var iMonster5Power = iMonster5Number * mCRtoPL(iMonster5Level);
+		var iMonster6Power = iMonster6Number * mCRtoPL(iMonster6Level);
+		var iMonsterTotalPower = iMonster1Power + iMonster2Power + iMonster3Power + iMonster4Power + iMonster5Power + iMonster6Power;
+		var iMonsterTotalLevel = mPLtoCR(iMonsterTotalPower);
+
+		var iDifference = mDifference(iMonsterTotalPower, iPartyTotalPower);
+
+		var iMonster1Experience = iMonster1Number * mExperience(iPartyAverageLevel, iMonster1Level);
+		var iMonster2Experience = iMonster2Number * mExperience(iPartyAverageLevel, iMonster2Level);
+		var iMonster3Experience = iMonster3Number * mExperience(iPartyAverageLevel, iMonster3Level);
+		var iMonster4Experience = iMonster4Number * mExperience(iPartyAverageLevel, iMonster4Level);
+		var iMonster5Experience = iMonster5Number * mExperience(iPartyAverageLevel, iMonster5Level);
+		var iMonster6Experience = iMonster6Number * mExperience(iPartyAverageLevel, iMonster6Level);
+		var iMonsterTotalExperience = iMonster1Experience + iMonster2Experience + iMonster3Experience + iMonster4Experience + iMonster5Experience + iMonster6Experience;
+		var iCRExperience = iMonsterTotalExperience / iPartyTotal;
+
+		var iDifficultyBaseExperience = mDifficultyExperience(iDifference, iPartyAverageLevel, iMonster1Level);
+		var iDifficultyExperience = iPartyAverageLevel * iDifficultyBaseExperience;
+
+		if(iParty1Number > 0)
+		{
+			var iMonster1Experience = iMonster1Number * mExperience(iParty1Level, iMonster1Level);
+			var iMonster2Experience = iMonster2Number * mExperience(iParty1Level, iMonster2Level);
+			var iMonster3Experience = iMonster3Number * mExperience(iParty1Level, iMonster3Level);
+			var iMonster4Experience = iMonster4Number * mExperience(iParty1Level, iMonster4Level);
+			var iMonster5Experience = iMonster5Number * mExperience(iParty1Level, iMonster5Level);
+			var iMonster6Experience = iMonster6Number * mExperience(iParty1Level, iMonster6Level);
+			var iMonsterTotalExperience = iMonster1Experience + iMonster2Experience + iMonster3Experience + iMonster4Experience + iMonster5Experience + iMonster6Experience;
+			var iCR1Experience = iMonsterTotalExperience / iPartyTotal;
+			var iDifficulty1Experience = iParty1Level * iDifficultyBaseExperience;
+		};
+
+		if(iParty2Number > 0)
+		{
+			var iMonster1Experience = iMonster1Number * mExperience(iParty2Level, iMonster1Level);
+			var iMonster2Experience = iMonster2Number * mExperience(iParty2Level, iMonster2Level);
+			var iMonster3Experience = iMonster3Number * mExperience(iParty2Level, iMonster3Level);
+			var iMonster4Experience = iMonster4Number * mExperience(iParty2Level, iMonster4Level);
+			var iMonster5Experience = iMonster5Number * mExperience(iParty2Level, iMonster5Level);
+			var iMonster6Experience = iMonster6Number * mExperience(iParty2Level, iMonster6Level);
+			var iMonsterTotalExperience = iMonster1Experience + iMonster2Experience + iMonster3Experience + iMonster4Experience + iMonster5Experience + iMonster6Experience;
+			var iCR2Experience = iMonsterTotalExperience / iPartyTotal;
+			var iDifficulty2Experience = iParty2Level * iDifficultyBaseExperience;
+		};
+
+		if(iParty3Number > 0)
+		{
+			var iMonster1Experience = iMonster1Number * mExperience(iParty3Level, iMonster1Level);
+			var iMonster2Experience = iMonster2Number * mExperience(iParty3Level, iMonster2Level);
+			var iMonster3Experience = iMonster3Number * mExperience(iParty3Level, iMonster3Level);
+			var iMonster4Experience = iMonster4Number * mExperience(iParty3Level, iMonster4Level);
+			var iMonster5Experience = iMonster5Number * mExperience(iParty3Level, iMonster5Level);
+			var iMonster6Experience = iMonster6Number * mExperience(iParty3Level, iMonster6Level);
+			var iMonsterTotalExperience = iMonster1Experience + iMonster2Experience + iMonster3Experience + iMonster4Experience + iMonster5Experience + iMonster6Experience;
+			var iCR3Experience = iMonsterTotalExperience / iPartyTotal;
+			var iDifficulty3Experience = iParty3Level * iDifficultyBaseExperience;
+		};
+
+		if(iParty4Number > 0)
+		{
+			var iMonster1Experience = iMonster1Number * mExperience(iParty4Level, iMonster1Level);
+			var iMonster2Experience = iMonster2Number * mExperience(iParty4Level, iMonster2Level);
+			var iMonster3Experience = iMonster3Number * mExperience(iParty4Level, iMonster3Level);
+			var iMonster4Experience = iMonster4Number * mExperience(iParty4Level, iMonster4Level);
+			var iMonster5Experience = iMonster5Number * mExperience(iParty4Level, iMonster5Level);
+			var iMonster6Experience = iMonster6Number * mExperience(iParty4Level, iMonster6Level);
+			var iMonsterTotalExperience = iMonster1Experience + iMonster2Experience + iMonster3Experience + iMonster4Experience + iMonster5Experience + iMonster6Experience;
+			var iCR4Experience = iMonsterTotalExperience / iPartyTotal;
+			var iDifficulty4Experience = iParty4Level * iDifficultyBaseExperience;
+		};
+
+		if(iParty5Number > 0)
+		{
+			var iMonster1Experience = iMonster1Number * mExperience(iParty5Level, iMonster1Level);
+			var iMonster2Experience = iMonster2Number * mExperience(iParty5Level, iMonster2Level);
+			var iMonster3Experience = iMonster3Number * mExperience(iParty5Level, iMonster3Level);
+			var iMonster4Experience = iMonster4Number * mExperience(iParty5Level, iMonster4Level);
+			var iMonster5Experience = iMonster5Number * mExperience(iParty5Level, iMonster5Level);
+			var iMonster6Experience = iMonster6Number * mExperience(iParty5Level, iMonster6Level);
+			var iMonsterTotalExperience = iMonster1Experience + iMonster2Experience + iMonster3Experience + iMonster4Experience + iMonster5Experience + iMonster6Experience;
+			var iCR5Experience = iMonsterTotalExperience / iPartyTotal;
+			var iDifficulty5Experience = iParty5Level * iDifficultyBaseExperience;
+		};
+
+		if(iParty6Number > 0)
+		{
+			var iMonster1Experience = iMonster1Number * mExperience(iParty6Level, iMonster1Level);
+			var iMonster2Experience = iMonster2Number * mExperience(iParty6Level, iMonster2Level);
+			var iMonster3Experience = iMonster3Number * mExperience(iParty6Level, iMonster3Level);
+			var iMonster4Experience = iMonster4Number * mExperience(iParty6Level, iMonster4Level);
+			var iMonster5Experience = iMonster5Number * mExperience(iParty6Level, iMonster5Level);
+			var iMonster6Experience = iMonster6Number * mExperience(iParty6Level, iMonster6Level);
+			var iMonsterTotalExperience = iMonster1Experience + iMonster2Experience + iMonster3Experience + iMonster4Experience + iMonster5Experience + iMonster6Experience;
+			var iCR6Experience = iMonsterTotalExperience / iPartyTotal;
+			var iDifficulty6Experience = iParty6Level * iDifficultyBaseExperience;
+		};
+
+		with (document.myform)
+		{
+			txtPartyEffectiveLevel.value = RoundOnePlace(iPartyEffectiveLevel);
+			txtPartyAverageLevel.value   = RoundOnePlace(iPartyAverageLevel);
+			txtSpotDistance.value		 = findSpotDistance(txtterrainType.value);
+
+			txtCR1Experience.value       = Math.round(iCR1Experience);
+			txtCR2Experience.value       = Math.round(iCR2Experience);
+			txtCR3Experience.value       = Math.round(iCR3Experience);
+			txtCR4Experience.value       = Math.round(iCR4Experience);
+			txtCR5Experience.value       = Math.round(iCR5Experience);
+			txtCR6Experience.value       = Math.round(iCR6Experience);
+			txtCRExperience.value        = Math.round(iCRExperience);
+
+			txtDifficulty1Experience.value       = Math.round(iDifficulty1Experience);
+			txtDifficulty2Experience.value       = Math.round(iDifficulty2Experience);
+			txtDifficulty3Experience.value       = Math.round(iDifficulty3Experience);
+			txtDifficulty4Experience.value       = Math.round(iDifficulty4Experience);
+			txtDifficulty5Experience.value       = Math.round(iDifficulty5Experience);
+			txtDifficulty6Experience.value       = Math.round(iDifficulty6Experience);
+			txtDifficultyExperience.value        = Math.round(iDifficultyExperience);
+			
+			txtMonsterTotalLevel.value = RoundOnePlace(iMonsterTotalLevel);
+			
+			txtDifference.value = RoundOnePlace(iDifference);
+			txtDifficulty.value = mDifficulty(iDifference);
+			txtPercentEnc.value = mPercentEnc(iDifference);
+			txtAdvice.value     = mAdvice(iDifference);
+			txtTreasure.value   = RoundOnePlace(mTreasure(iMonsterTotalLevel));
+		}
+		return;
+	}
+
+</script>
+        <link rel="stylesheet" type=text/css href="../styles/table.css" title="php-style">
+	<style>
+		BODY {
+			background: #EDDDC4 url(images/map.jpg) no-repeat fixed 0% 0%;
+			background-position : 0 0px;
+			}
+		.vers {
+			margin-left:15px;
+			margin-top:0px;
+		}
+		h1, h4 {
+			margin: 0px;
+		}
+		TD, TH {
+			border : 2px solid #CC9966;
+			padding: 1px;
+		}
+		table {
+			position: relative;
+			left: 10px;
+		}
+		.nb {
+			border : 0px none;
+		}
+		a {
+			color: #333399;
+		}
+	</style>
+
+	<meta name="Author" content="arcady"><title>Encounter EL &amp; XP Calculator 4.01</title></head>
+
+
+
+<body>
+
+<form method="post" enctype="application/x-www-form-urlencoded" name="myform">
+
+<div>
+	<p>
+<table border="0" width="750">
+	<tbody>
+		<tr>
+			<td>
+				<h1>Encounter EL &amp; XP Calculator 4.01</h1>For 3.5 use, by arcady based on work from
+				<a href="#credits">Tiera Starr</a> and
+				<a href="#credits">John Dells</a>
+				
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table border="0" width="750">
+	<tbody>
+  		<tr>
+			<th colspan="3" width="37%">
+				<h4>Party
+			</h4></th>
+			<th colspan="2" width="26%">
+				<h4>XP Awards</h4>(per character)
+			</th>
+			<th colspan="3" width="37%">
+				<h4>Monsters
+			</h4></th>
+		</tr>
+		<tr>
+			<td rowspan="7" width="27%">Enter the number and ECL of characters
+              in the party.
+              <p>Note: For PHB races, ECL = class level.</p>
+            </td>
+			<td width="5%">Num.</td>
+			<td width="5%">ECL</td>
+			<td width="13%">CR based (3.5)</td>
+			<td width="13%">Difficulty based</td>
+			<td rowspan="7" width="27%">Enter the number and CR of each opponent
+              the party faces.
+              <p>
+              Note: CR's may be entered as fractions (<small>2/3, 3/4, 1/2, 1/3, 1/4, 1/5, 1/6, 1/8, 1/9, 1/10</small>).</p>
+			  <br>If encountered in:
+				<select name="txtterrainType"><option value="Desert">Desert
+					</option><option value="DesertDunes">Desert, Dunes
+					</option><option value="Dungeon">Dungeon
+					</option><option value="dpForest">Forest, Deep
+					</option><option value="mpForest">Forest, Medium
+					</option><option value="spForest">Forest, Sparse
+					</option><option value="gHills">Hill, Gentle
+					</option><option value="rHills">Hills, Rugged
+					</option><option value="Moor">Marsh, Moor
+					</option><option value="Swamp">Marsh, Swamp
+					</option><option value="Mount">Mountains
+					</option><option value="Plains" selected="selected">Plains
+					</option><option value="Urban">Urban
+					</option><option value="cWater">Water, Clear
+					</option><option value="mWater">Water, Murky
+				</option></select>
+			  <br>Spotting checks start at:<br>
+			  <input name="txtSpotDistance" size="25">
+            </td>
+			<td width="5%">Num.</td>
+			<td width="5%">CR</td>
+		</tr>
+		<tr>
+			<td align="right" bgcolor="#ff9966"><input name="txtParty1Number" size="3" value="4" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtParty1Level" size="3" value="1" type="text"></td>
+			<td><input name="txtCR1Experience" size="9"></td>
+			<td><input name="txtDifficulty1Experience" size="9"></td>
+			<td align="right" bgcolor="#ff9966"><input name="txtMonster1Number" size="3" value="1" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtMonster1Level" size="3" value="1" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right" bgcolor="#ff9966"><input name="txtParty2Number" size="3" value="0" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtParty2Level" size="3" value="1" type="text"></td>
+			<td><input name="txtCR2Experience" size="9"></td>
+			<td><input name="txtDifficulty2Experience" size="9"></td>
+			<td align="right" bgcolor="#ff9966"><input name="txtMonster2Number" size="3" value="0" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtMonster2Level" size="3" value="1" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right" bgcolor="#ff9966"><input name="txtParty3Number" size="3" value="0" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtParty3Level" size="3" value="1" type="text"></td>
+			<td><input name="txtCR3Experience" size="9"></td>
+			<td><input name="txtDifficulty3Experience" size="9"></td>
+			<td align="right" bgcolor="#ff9966"><input name="txtMonster3Number" size="3" value="0" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtMonster3Level" size="3" value="1" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right" bgcolor="#ff9966"><input name="txtParty4Number" size="3" value="0" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtParty4Level" size="3" value="1" type="text"></td>
+			<td><input name="txtCR4Experience" size="9"></td>
+			<td><input name="txtDifficulty4Experience" size="9"></td>
+			<td align="right" bgcolor="#ff9966"><input name="txtMonster4Number" size="3" value="0" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtMonster4Level" size="3" value="1" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right" bgcolor="#ff9966"><input name="txtParty5Number" size="3" value="0" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtParty5Level" size="3" value="1" type="text"></td>
+			<td><input name="txtCR5Experience" size="9"></td>
+			<td><input name="txtDifficulty5Experience" size="9"></td>
+			<td align="right" bgcolor="#ff9966"><input name="txtMonster5Number" size="3" value="0" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtMonster5Level" size="3" value="1" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right" bgcolor="#ff9966"><input name="txtParty6Number" size="3" value="0" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtParty6Level" size="3" value="1" type="text"></td>
+			<td><input name="txtCR6Experience" size="9"></td>
+			<td><input name="txtDifficulty6Experience" size="9"></td>
+			<td align="right" bgcolor="#ff9966"><input name="txtMonster6Number" size="3" value="0" type="text"></td>
+			<td bgcolor="#ff9966"><input name="txtMonster6Level" size="3" value="1" type="text"></td>
+		</tr>
+		<tr>
+			<td colspan="3" align="right">Uniform XP per Character (3.0-similar): </td>
+			<td><input name="txtCRExperience" size="9"></td>
+			<td><input name="txtDifficultyExperience" size="9"></td>
+			<td align="right">Treasure Value: </td>
+			<td colspan="2"><input name="txtTreasure" size="9"></td>
+		</tr>
+  		<tr>
+			<th colspan="4" class="nb" align="right">
+                <input onclick="mCalculate()" value="Calculate" name="cmdCalculate" type="button">
+			</th>
+			<th colspan="4" class="nb" align="left">
+                <input onclick="mCalculate()" value="Reset" name="cmdReset" type="reset">
+			</th>
+		</tr>
+	</tbody>
+</table>
+</p><p class="nomargin">	
+<table border="0" width="750">
+	<tbody>
+		<tr>
+			<td align="right">Effective Party Level: </td>
+			<td><input name="txtPartyEffectiveLevel" size="5"></td>
+			<td align="right">Encounter Level: </td>
+			<td><input name="txtMonsterTotalLevel" size="5"></td>
+			<td align="right">Difficulty: </td>
+			<td><input name="txtDifficulty" size="26" value="Unknown" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right">Average Party Level: </td>
+			<td><input name="txtPartyAverageLevel" size="5"></td>
+<!--			<TD align="right">Difficulty Factor: </TD>-->
+			<td>% of this EL to use:</td>
+			<td><input name="txtPercentEnc" size="5"></td>
+			<td align="right">Advice to Party: </td>
+			<td><input name="txtAdvice" size="26" value="Unknown" type="text"><input value="4" name="txtDifference" size="5" type="hidden"></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+	
+<table border="0" width="750">
+	<tbody>
+  		<tr>
+			<td colspan="4">
+				<b>XP Awards (per character):</b> Four different versions
+                available for a DM to choose from.</td>
+		</tr><tr>
+			<td valign="top">
+				CR based Individual XP (listed per
+                ECL) uses the <b>3.5 DMG</b> rules and numbers to determine XP based on the actual
+                character levels (treated as a minimum of 3), individual opponent CR's, and the number in
+                the party. This grants higher XP to lower level participants,
+                allowing them to catch up to their higher level comrades.</td>
+                <td valign="top">CR based Uniform XP uses the <b>3.0 DMG</b> rules with 3.5 DMG numbers to determine XP based on
+                Average Party Level (treated as a minimum of 3), individual opponent CR's, and the number in
+                the party. Analysis proves this only really works for a party of
+                four with the same ECL's.</td>
+                <td valign="top">Difficulty
+                based Individual XP is based on the idea that it should take 13 1/3
+                typical (ECL = Average Party Level for a party of 4) encounters to
+				advance a level.
+                However, using this method, differing level companions will
+                never catch up in either XP or level.</td>
+                <td valign="top">Difficulty
+                based Uniform XP uses the guidelines that 13 1/3 typical
+                encounters to advance a level. However, because Average Party
+                level is used as a multiplier instead of the individual
+                character levels, differing level companions will eventually
+                catch up in level (but not XP).
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				Effective Party Level and Average Party level will show the difference in the 'CR' of the PCs
+				if the group has more than 4 characters. Once there are more than 4 Effective Party Level will
+				start to go up even if the extra members are lower level and thus drive the average down.
+			</td>
+			<td colspan="2">
+				% of this EL to use shows how many encounters in a balanced adventure design should use ELs of
+				this difficulty. This along with Difficulty and the Advice to Party provide tools for gauging
+				encounter design.
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<b>A further caution</b>:
+				EL and CR become less and less reliable the further the
+				PCs differ in stats from '25 point buy / standard array'. However
+				there's no agreement on exactly how much of an impact this has.
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<h4>Version History:</h4>
+				
+				<p>Version 4.01 - arcady<br>
+				</p><p class="vers">
+					<b>4.01</b>: Added Spotting Distances - ever DM I've had has cheated these too short
+					(often having armies unseen until melee range), so I figured DMs need this lesson.
+					<br><b>4.0</b>: Cleaned up the rounding and made the numbers match 3.5 for the CR-based system.
+					<br>Fixed difference of more than 7 levels for 'Difficulty based' system.
+					<br>Added calculation for determining the '% of this EL to use' in a 'balanced' adventure design.
+				</p>
+				
+                <p><a name="credits"></a><a href="http://kender.brisbanecbd.com/Tiera/DnD/EPLvsEL.htm">Version 3.13</a>:
+				</p><p class="vers">
+				Designed and written by <b>Tiera Starr</b>
+				</p>
+				
+				<p><a href="http://home.woh.rr.com/edara/Adventures/encounter_calculator.html">Version
+                2.1</a>:</p><p class="vers">
+                Designed and written by <b>John Dells</b>.
+				</p>
+				You can contact these people through whatever means they allow on their sites,
+				which are linked above.
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+</p></div>
+
+</form>
+<p>&nbsp;</p>
+
+</body></html>

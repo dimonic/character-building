@@ -1,0 +1,25 @@
+TODO for web-based PC character sheet printer.
+
+Time-stamp: <2005-03-21 08:37:27 dominic>
+
+Complete/fix features:
+
+  * Complete skill-rank totaling.
+
+  * Server based character portrait browser (instead of/as well as file upload).
+
+  * Suggest values for attack, damage when blank.
+
+  * Include racial/level bonuses in attribute allocation/points totaling.
+
+  * Make sourcebook selection per character (instead of cookie based).
+
+New features:
+
+  * Notes.
+
+  * Languages.
+
+  * Equipment, magical.
+
+  * Equipment, mundane.

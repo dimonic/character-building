@@ -1,0 +1,3 @@
+  while ($cclass_row = $query_result->fetchRow(DB_FETCHMODE_ASSOC)) {
+    if (DB::isError($cclass_row)) {
+      die($class_row->getMessage());

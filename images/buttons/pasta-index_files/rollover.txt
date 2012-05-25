@@ -1,0 +1,34 @@
+function WM_preloadImages() {
+  // Don't bother if there's no document.images
+  if (document.images) {
+    if (typeof document.WM == 'undefined'){
+      document.WM = new Object();
+    }
+    document.WM.loadedImages = new Array();
+    // Loop through all the arguments.
+    var argLength = WM_preloadImages.arguments.length;
+    for(arg=0;arg<argLength;arg++) {
+      // For each arg, create a new image.
+      document.WM.loadedImages[arg] = new Image();
+      // Then set the source of that image to the current argument.
+      document.WM.loadedImages[arg].src = WM_preloadImages.arguments[arg];
+    }
+  }
+}
+function swap(daImage, daSrc){
+  var objStr,obj;
+  // rollover image swap function
+  // Check to make sure that images are supported in the DOM.
+  if(document.images){
+    // Check to see whether you are using a name, number, or object
+    if (typeof daImage == 'string') {
+      // This whole objStr nonesense is here solely to gain compatability
+      // with ie3 for the mac.
+      objStr = 'document.' + daImage;
+      obj = eval(objStr);
+      obj.src = daSrc;
+    } else if ((typeof daImage == 'object') && daImage && daImage.src) {
+      daImage.src = daSrc;
+    }
+  }
+}

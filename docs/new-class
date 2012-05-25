@@ -1,0 +1,25 @@
+Making a new class
+
+Add to `class`, with auto class_id
+
+Note class_id.
+
+Add to `class_level` for each level of the class
+
+SELECT FROM `class_level` WHERE `class_id` = 6 INTO OUTFILE 'monk_class'
+
+LOAD DATA INFILE  'monk_class' 
+INTO TABLE `class_level`
+(@var1, hd_advance, level, special_abilities, bonus_feat, spell_advancement, spells_per_day, spells_known, skill_array)
+SET class_id  = 197
+
+
+Add to `skill_list` (if existing class similar, use:
+
+"SELECT * FROM 'skill_list' WHERE 'class_id' = x INTO OUTFILE 'new_list'"
+
+then
+
+"LOAD DATA INFILE 'new_skill' INTO TABLE `skill_list` (@var1, @var2, skill_id) SET `class_id` = newx, description = 'new class'"
+
+then add new records for additional skills

@@ -1,0 +1,3 @@
+local.gcoa.aow
+local.gcoa.rhod
+local.gcoa.ideas

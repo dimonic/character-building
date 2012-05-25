@@ -1,0 +1,230 @@
+body, td, th {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 90%;
+}
+
+table {
+	border-collapse: collapse;
+};
+
+th {
+	background: lightgrey;
+	padding: 1px 2px;
+	font-size: 80%;
+}
+
+img {
+	margin: 0;
+}
+
+button {
+	border-width: 0;
+	padding: 0;
+}
+
+th.Edit {
+	text-align: right;
+}
+
+th.Menu:hover { background: #ffa }
+
+tr.Data:hover {  background: #ffa }
+
+.Data:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
+a.Data {
+	color: blue;
+	cursor: pointer;
+	cursor: hand;
+}
+
+tr.DataSelected { background: #00d0d0 }
+
+td {
+	font-size: 80%;
+	padding: 2px 4px;
+  border-style: none;
+}
+
+td.spell_list {
+  border-style: dotted;
+}
+
+td.Even {
+	background: #f0f0f0;
+}
+
+td.Odd {
+	background: #dddddd;
+}
+
+p {
+	font-family: verdana,arial,helvetica,sans-serif;
+}
+
+em {
+	font-weight: bold;
+	font-style: italic;
+}
+
+acronym {
+        border-bottom: 1px dashed #00cc00;
+        cursor: help;
+}
+
+.error {
+        color: #cc0000;
+}
+
+.newsDate {
+	font-size: 85%;
+	font-style: italic;
+	color: #6666cc;
+}
+
+.sidebar {
+	font-size: 85%;
+}
+
+.sidebar p {
+	text-align: left !important;
+}
+
+code, pre, tt {
+	font-family: Courier, "Courier New", monospace;
+	font-size: 90%;
+}
+
+h1 {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 140%;
+	font-weight: bold;
+	color: #000066;
+}
+
+h2 {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 125%;
+	font-weight: bold;
+	color: #000066;
+}
+
+h3 {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 110%;
+	font-weight: bold;
+	color: #000066;
+}
+
+h4 {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	color: #000066;
+}
+
+small {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 75%;
+}
+
+a:link, a:visited, a:active {
+	text-decoration:	none;
+	color:		blue;
+}
+
+a.small {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 75%;
+	text-decoration: none;
+}
+
+.tableTitle {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-weight: bold;
+}
+
+.tableExtras {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 85%;
+	color: #FFFFFF;
+}
+
+input {
+	font-family: verdana,arial,helvetica,sans-serif;
+}
+
+textarea {
+	font-family: verdana,arial,helvetica,sans-serif;
+}
+
+textarea.Display {
+	font-size: 75%;
+}
+
+select {
+	font-family: verdana,arial,helvetica,sans-serif;
+}
+
+option.small {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 75%;
+}
+
+input.small, select.small {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 75%;
+}
+
+textarea.small {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 95%;
+}
+
+p.formerror {
+        border: 1px solid #ff0000;
+        color: #000000;
+        background: #ffeeee;
+        padding: 2px 4px;
+}
+
+div.errors {
+        border: 1px dashed #660;
+        color: #600;
+        background: #fee;
+        margin: 4px;
+        padding: 6px;
+}
+
+div.tip {
+        border: 1px solid #00c;
+        color: #006;
+        background: #eef;
+        padding: 0px 8px;
+}
+
+table#cal {
+        font-size: smaller;
+}
+
+table#cal  a {
+        text-decoration: none;
+}
+table#cal  a:hover {
+        text-decoration: underline;
+}
+
+table#cal a.day {
+        float: right;
+        font-weight: bold;
+        color: #666;
+}
+
+table#cal div.event {
+        margin-bottom: 2px;
+        padding-bottom: 2px;
+        border-bottom: 1px dashed #000;
+}

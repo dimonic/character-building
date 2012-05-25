@@ -1,0 +1,394 @@
+Reference Sheet v2.9                                                       NPC/PC Classes, Monster Advancement                                                                                                                             Campaign Sheet 1
+NPC CLASSES (DMG P37-40)                                                                                              INFLUENCING NPC ATTITUDE (DMG P149) 
+                                                                                                                       Initial Attitude                                                                 New Attitude 
+Adept                                                                                                                                                   Hostile Unfriendly 
+                                                                                                                                                                                                                  Indifferent 
+                                                                                                                                                                                                                                              Friendly 
+                                                                                                                                                                                                                                                                    Helpful 
+        Base Saves hp  Skill  Spells/day                                                                                       Hostile  Less than 20                                       20                             25                     35                  50 
+     Level Attack  F/R/W  (d6) Feats points 0 1 2 3                                                                      Unfriendly                 Less than 5                            5                              15                     25                  40 
+       1        +0 +0/+0/+2 6  1  8  3 
+                                                                                          1                              Indifferent                            -                 Less than 1                             1                      15                  30 
+       2        +1 +0/+0/+3 9                        1          10 3                      1                               Friendly                              -                               -                 Less than 1                    1                   20
+       3        +1 +1/+1/+3 13  2  12 3 
+                                                                                          2   
+       4        +2          +1/+1/+4 16              2          14                3       2          0
+       5        +2 +1/+1/+4 20  2  16 3 
+                                                                                          2 
+                                                                                                     1                PC CLASSES SUMMARY 
+       6        +3 +2/+2/+5 23  3                               18 3                      2          1                   Class                Base Attack                  Good Saves                     HD          Skill Points                         Gold 
+       7        +3 +2/+2/+5 27  3  20 3 
+                                                                                          3 
+                                                                                                     2                 Barbarian level                                            Fort d12  4  4d4 
+                                                                                                                                                                                                                                                             x 
+                                                                                                                                                                                                                                                              10 
+       8        +4 +2/+2/+6 30  3                               22 3                      3          2     0           Bard  level x 3/4                                     Ref, Will                    d6                          4           4d4 x 10 
+       9        +4 +3/+3/+6 34  4  24 3 
+                                                                                          3 
+                                                                                                     2 
+                                                                                                           1           Cleric                  level x 3/4                   Fort, Will                   d8                          2           5d4 x 10 
+      10        +5          +3/+3/+7 37              4          28                3       3          2     1           Druid                   level x 3/4                   Fort, Will                   d8                          4           2d4 x 10 
+                                                                                                                       Fighter level  Fort 
+                                                                                                                                                                                                          d10 2 6d4 
+                                                                                                                                                                                                                                                             x 
+                                                                                                                                                                                                                                                              10 
+Aristocrat                                                                                                             Monk level x 3/4                                           All                     d8                          4                    5d4 
+     Level     Base Attack      Saves F/R/W          hp(d8)      Feats                 Skill points                    Paladin level  Fort 
+                                                                                                                                                                                                          d10 2 6d4 
+                                                                                                                                                                                                                                                             x 
+                                                                                                                                                                                                                                                              10 
+       1              +0  +0/+0/+2 8 1  16                                                                             Ranger level  Fort 
+                                                                                                                                                                                                          d10 4                                   6d4 x 10 
+       2              +1  +0/+0/+3 12 1                                                        20                      Rogue                   level x 3/4                        Ref                     d6                          8           5d4 x 10 
+       3              +2  +1/+1/+3 17 2  24                                                                            Sorcerer                level x 1/2                        Will                    d4                          2           3d4 x 10 
+       4              +3             +1/+1/+4 21                      2                        28                      Wizard                  level x 1/2                        Will                    d4                          2           3d4 x 10 
+       5              +3  +1/+1/+4 26 2  32 
+       6              +4  +2/+2/+5 30 3                                                        36 
+       7              +5  +2/+2/+5 35 3  40                                                                           PC WEALTH BY LEVEL (DMG P145, 5-1) 
+       8          +6/+1  +2/+2/+6 39                                  3                        44                      Level Wealth  Level Wealth  Level Wealth  Level Wealth 
+       9          +6/+1  +3/+3/+6 45 4  48                                                                                                                            6             13k                             11                      66k  16                               260k 
+      10  +7/+2  +3/+3/+7 49 4                                                                 52                        2                900                         7             19k  12  88k                                                                    17 340k 
+                                                                                                                         3                2700   8                                  27k                             13 110k  18 440k 
+Commoner                                                                                                                 4                5400                        9             36k  14  150k                                                                   19 580k 
+     Level     Base Attack      Saves F/R/W          hp(d4)      Feats                 Skill points                      5                9000   10                                 49k                             15                      200k   20                             760k 
+       1              +0  +0/+0/+0 4 1  16 
+       2              +1  +0/+0/+0 6                                  1                        20                     MONSTER ADVANCEMENT SUMMARY (MM P13) 
+       3              +1  +1/+1/+1 9 2  24                                                                                           Type                       Base Attack                          Good Saves                  HD           Skill Points                 Feats 
+       4              +2  +1/+1/+1 11 2                                                        28                      Aberration                                    HD x 3/4                            Will                    d8             +2/EHD               +1/4EHD 
+       5              +2  +1/+1/+1 14 2  32                                                                            Animal                                        HD x 3/4                          variable                  d8              10-15                       -
+       6              +3  +2/+2/+2 16 3                                                        36                      Beast                                         HD x 3/4                         Fort, Ref                  d10            +1/EHD                       - 
+       7              +3  +2/+2/+2 19 3  40                                                                            Construct                                     HD x 3/4                             -                      d10                  -                      -
+       8              +4  +2/+2/+2 21 3                                                        44                      Dragon HD 
+                                                                                                                                                                                                         All 
+                                                                                                                                                                                                                                 d12 
+                                                                                                                                                                                                                                              (Int+6)/EHD 
+                                                                                                                                                                                                                                                                     +1/4EHD 
+       9              +4  +3/+3/+3 24 4  48                                                                            Elemental 
+                                                                                                                                                                     HD x 3/4                          variable                  d8             +2/EHD               +1/4EHD 
+      10  +5  +3/+3/+3 26 4                                                                    52                      Fey                                           HD x 1/2                         Ref, Will                  d8             +2/EHD               +1/4EHD 
+Expert                                                                                                                 Giant                                         HD x 3/4                            Fort                    d8             +1/EHD               +1/4EHD 
+     Level     Base Attack      Saves F/R/W          hp(d6)      Feats                 Skill points                    Humanoid                                      HD x 3/4                          variable                  d8             +1/EHD               +1/4EHD 
+       1              +0  +0/+0/+2 6 1  24                                                                             Magical Beast                                       HD                         Fort, Ref                  d10            +1/EHD               +1/4EHD 
+       2              +1  +0/+0/+3 9                                  1                        30                      Monstrous Humanoid                                  HD                         Ref, Will                  d8             +2/EHD               +1/4EHD 
+       3              +2  +1/+1/+3 13 2  36                                                                            Ooze                                          HD x 3/4                             -                      d10                  -              blindsight 
+       4              +3  +1/+1/+4 16 2                                                        42                      Outsider HD 
+                                                                                                                                                                                                         All 
+                                                                                                                                                                                                                                 d8 
+                                                                                                                                                                                                                                              (Int+8)/EHD 
+                                                                                                                                                                                                                                                                     +1/4EHD 
+       5              +3  +1/+1/+4 20 2  48                                                                            Plant  HD x 3/4                                                                   Fort                    d8                   -                      -
+       6              +4  +2/+2/+5 23 3                                                        54                      Shapechanger                                  HD x 3/4                            All                     d8             +1/EHD               +1/4EHD 
+       7              +5  +2/+2/+5 27 3  60                                                                            Undead                                        HD x 1/2                            Will                    d12            +2/EHD               +1/4EHD 
+       8          +6/+1  +2/+2/+6 30 3                                                         66                      Vermin                                        HD x 3/4                            Fort                    d8              10-12                       - 
+       9          +6/+1  +3/+3/+6 34 4  72 
+      10  +7/+2  +3/+3/+7 37 4                                                                 78                     ACCESS TO SPELLS 
+Warrior                                                                                                                Spell Level              Bard                 Cleric, Druid, Wizard                         Paladin, Ranger                         Sorcerer          Adept 
+                                                                                                                                0                 1                                 1                                                 -                       1                    1
+     Level      Base Attack          Saves F/R/W          hp (d8)          Feats          Skill points                          1                (2) 3                              1                                           (4) 6                         1                    1
+       1               +1 +2/+0/+0 
+                                                             8 
+                                                                             1 8                                                2                (4) 5                              3                                       (8) 10                            4                   (4) 5 
+       2               +2 +3/+0/+0 
+                                                            12 
+                                                                             1                       10                         3                (7) 8                              5                                      (11) 12                            6                   (8) 9 
+       3               +3 +3/+1/+1 
+                                                            17 
+                                                                             2 
+                                                                                                     12                         4              (10) 11                              7                                      (14) 15                            8             (12) 13 
+       4               +4 +4/+1/+1 
+                                                            21 
+                                                                             2                       14                         5              (13) 14                              9                                                 -                       10            (16) 17 
+       5               +5 +4/+1/+1 
+                                                            26 
+                                                                             2 
+                                                                                                     16                         6              (16) 17                             11                                                 -                       12                    - 
+       6              +6/+1 +5/+2/+2 
+                                                            30 
+                                                                             3                       18                         7                  -                               13                                                 -                       14                    -
+       7              +7/+2 +5/+2/+2 
+                                                            35 
+                                                                             3 20                                               8                  -                               15 - 
+                                                                                                                                                                                                                                                              16 
+                                                                                                                                                                                                                                                                                    - 
+       8              +8/+3 +6/+2/+2 
+                                                            39 
+                                                                             3                       22                         9                  -                               17 -                                                                       18 
+                                                                                                                                                                                                                                                                                    -
+       9              +9/+4 +6/+3/+3 
+                                                            45 
+                                                                             4 24 
+      10 +10/+5 +7/+3/+3 
+                                                            49 
+                                                                             4                       26 
+      11 +11/+6/+1  +7/+3/+3 54 4  28                                                                                 EXPERIENCE & LEVEL-DEPENDENT BENEFITS (DMG P252) 
+      12 +12/+7/+2  +8/+4/+4 58 5                                                                    30                   Level                         XP                        Max Skill                         Max CC Skill                      Feats                 Ability 
+      13 +13/+8/+3  +8/+4/+4 63 5  32                                                                                           1                          0                               4                                     2                         1st  
+      14 +14/+9/+4  +9/+4/+4 67 5                                                                    34                         2                       1000  5                                                             2.5 
+      15 +15/+10/+5  +9/+5/+5  72  6  36                                                                                        3                       3000 6                                                                   3 2nd 
+                                                                                                                                                                                                                                                                                    
+      16 +16/+11/+6/+1 +10/+5/+5 76  6                                                               38                         4                       6000 7                                                              3.5                                                   1st 
+      17 +17/+12/+7/+2 +10/+5/+5  81  6                                                              40                         5                       10000 8                                                                  4    
+      18 +18/+13/+8/+3 +11/+6/+6  85  7                                                              42                         6                       15000 9                                                             4.5 3rd 
+      19 +19/+14/+9/+4 +11/+6/+6  90  7                                                              44                         7                       21000 10                                                                 5     
+      20 +20/+15/+10/+5 +12/+6/+6  94  7                                                             46                         8                       28000 11                                                            5.5                                              2nd 
+                                                                                                                                9                       36000 12                                                                 6  4th  
+NPC GEAR                                                                                                                        10 45000 13                                                                                 6.5 
+                                                                                                                                11 55000  14                                                                                     7     
+     Level Value  Level Value  Level Value  Level Value                                                                         12 66000  15                                                                                7.5  5th 3rd 
+       1        900   6                  5600                11 21k  16 77k                                                     13 78000  16                                                                                     8     
+       2       2000             7        7200   12  27k                                                   17 100k               14 91000  17                                                                                8.5 
+       3       2500   8                  9400                13 35k  18 130k                                                    15 105000  18                                                                                    9  6th   
+       4       3300             9         12k   14  45k                                                   19 170k               16 120000  19                                                                               9.5                                               4th 
+       5       4300   10  16k                                15 59k  20 220k                                                    17 136000  20                                                                                   10     
+                                                                                                                                18 153000  21                                                                              10.5  7th 
+                                                                                                                                19 171000  22                                                                                   11     
+                                                                                                                                20 190000  23                                                                              11.5                                               5th 
+
+
+
+Reference Sheet v2.9                                                                                                                      XP, Treasure                                                       Campaign Sheet 2 
+EXPERIENCE POINT AWARDS (DMG P166, 7-1)                                                                                                                 TREASURE (DMG P170-171, 7-4) 
+                                                                       Challenge Rating                                                                    Level d%  Coins  d%  Goods  d%  Items 
+     Party                                                                                                                                                  1st 
+                                                                                                                                                                     01-14  -  01-90 - 01-71 - 
+     Level      CR 1            CR 2            CR 3        CR 4        CR 5      CR 6         CR 7             CR 8          CR 9          CR 10                    15-29     1d6x1000 cp      91-95        1 gem       72-95      1 mundane 
+      1-3  300 600 900 1350 1800 2700 3600 5400 7200 10800                                                                                                           30-52      1d8x100 sp      96-100       1 art       96-100      1 minor 
+       4         300  600  800  1200 1600 2400 3200 4800 6400  9600                                                                                           53-95 
+                                                                                                                                                                                2d8x10 
+                                                                                                                                                                                         gp                                               
+       5         300 500 750 1000 1500 2250 3000 4500 6000  9000                                                                                              96-100 
+                                                                                                                                                                                1d4x10 
+                                                                                                                                                                                         pp                                               
+       6         300  450  600  900  1200 1800 2700 3600 5400  7200                                                                                        2nd 01-13  -                         01-81  -                 01-49  -
+       7         263 394 525 700 1050 1400 2100 3150 4200  6300                                                                                                      14-23 
+                                                                                                                                                                               1d10x1000 cp     82-95      1d3 gems      50-85      1d3 mund. 
+                                                                                                                                                                     24-43     2d10x100 sp      96-100      1d3 art      86-100      1 minor 
+       8         200  300  450  600  800  1200 1600 2400 3600  4800                                                                                                  44-95      4d8x10 gp 
+       9                         225 338 506 675 900 1350 1800 2700 4050                                                                                            96-100      1d10x10 pp 
+      10                                        250 375 563 750 1000 1500 2000 3000                                                                        3rd 
+                                                                                                                                                                     01-11  -  01-77 - 01-49 - 
+      11                                                     275 413 619 825 1100 1650 2200                                                                          12-21     2d10x1000 cp     78-95      1d3 gems      50-79      1d3 mund. 
+      12                                                                 300 450 675 900 1200 1800                                                                   22-41      4d8x100 sp      96-100      1d3 art      80-100      1 minor 
+      13                                                                           325 488 731 975 1300                                                       42-95 
+                                                                                                                                                                                1d4x100 
+                                                                                                                                                                                         gp                                               
+      14                                                                                       350 525 788 1050                                                     96-100 1d10x10 
+                                                                                                                                                                                         pp                                               
+      15                                                                                                         375 563  844                               4th  01-11              -           01-70          -         01-42          -
+      16                                                                                                                       400  600                              12-21 3d10x1000 cp         71-95      1d4 gems      43-62      1d4 mund. 
+      17                                                                                                                                     425                     22-41     4d12x1000 sp     96-100      1d3 art      63-100      1 minor 
+                                                                                                                                                                     42-95      1d6x100 gp 
+                                                                        Challenge Rating                                                                            96-100      1d8x10 pp 
+     Party                                                                                                                                                  5th 
+                                                                                                                                                                     01-10  -  01-60 - 01-57 - 
+     Level      CR11            CR12            CR13        CR14        CR15       CR16         CR17             CR18          CR19          CR20                    11-19      1d4x10k cp      61-95      1d4 gems      58-67      1d4 mund. 
+       4        12800 
+                                                                                                                                                                     20-38     1d6x1000 sp      96-100      1d3 art      68-100     1d3 minor 
+       5        12000 
+                                18000                                                                                                                                39-95 1d8x100 
+                                                                                                                                                                                         gp                                               
+       6        10800 
+                                14400 
+                                                21600 
+                                                                                                                                                              96-100 
+                                                                                                                                                                                1d10x10 
+                                                                                                                                                                                         pp                                               
+       7        8400 
+                                12600 
+                                                16800 
+                                                            25200 
+       8        7200 
+                                9600 
+                                                14400 
+                                                            19200 
+                                                                        28800 
+                                                                                                                                                            6th 01-10  -                        01-56  -                 01-54  -
+       9        5400 
+                                8100 
+                                                10800 
+                                                            16200 
+                                                                        21600 
+                                                                                   32400                                                                             11-18 
+                                                                                                                                                                                1d6x10k cp      57-92      1d4 gems      55-59      1d4 mund. 
+      10 
+                4500  6000  9000  12000 18000 24000 36000                                                                                                            19-37     1d8x1000 sp      93-100      1d4 art      60-99      1d3 minor 
+      11  3300  4950  6600  9900  13200 19800 26400 39600                                                                                                            38-95     1d10x100 gp                                100       1 medium 
+      12  2400  3600  5400  7200  10800 14400 21600 28800 43200                                                                                                     96-100      1d12x10 pp 
+      13  1950  2600  3900  5850  7800  11700 15600 23400 31200 46800                                                                                       7th 
+                                                                                                                                                                     01-11  -  01-48 - 01-51 - 
+      14  1400 2100 2800 4200 6300  8400  12600 16800 25200 33600                                                                                                    12-18     1d10x10k cp      49-88      1d4 gems      52-97      1d3 minor 
+      15  1125  1500  2250  3000  4500  6750  9000  13500 18000 27000                                                                                                19-35     1d12x1000 sp     89-100      1d4 art      98-100     1 medium 
+      16  900  1200 1600 2400 3200 4800 7200 9600 14400 19200                                                                                                 36-93 
+                                                                                                                                                                                2d6x100 
+                                                                                                                                                                                         gp                                               
+      17  638  956  1275 1700 2550 3400 5100 7650 10200 15300                                                                                                       94-100 3d4x10 
+                                                                                                                                                                                         pp                                               
+      18  450  675  1013 1350 1800 2700 3600 5400 8100 10800                                                                                                8th  01-10              -           01-45          -         01-48          -
+      19                         475  713  1069  1425  1900  2850  3800  5700  8550                                                                                  11-15 1d12x10k cp          46-85      1d6 gems      49-96      1d4 minor 
+      20                                        500  750  1000 1500 2000 3000 4000 6000                                                                              16-29     2d6x1000 sp      86-100      1d4 art      97-100     1 medium 
+                                                                                                                                                                     30-87      2d8x100 gp 
+TREASURE VALUES PER ENCOUNTER (DMG P170, 7-2)                                                                                                                       88-100      3d6x10 pp 
+     EL Treasure EL Treasure EL Treasure EL Treasure                                                                                                        9th 
+                                                                                                                                                                     01-10  -  01-40 - 01-48 - 
+      1                300 gp            6                2000 gp        11 7500 
+                                                                                              gp 
+                                                                                                               16 28000 gp                                           11-15      2d6x10k cp      41-80      1d8 gems      49-96      1d4 minor 
+      2                600 gp            7                2600 gp        12              9800 gp               17 36000 
+                                                                                                                                     gp                              16-29     2d8x1000 sp      81-100      1d4 art      97-100     1 medium 
+      3                900 gp            8                3400 gp        13 13000 
+                                                                                              gp 
+                                                                                                               18 47000 gp                                    30-85 
+                                                                                                                                                                                5d4x100 
+                                                                                                                                                                                         gp                                               
+                                                                                                                                                              86-100 
+                                                                                                                                                                                2d12x10 
+                                                                                                                                                                                         pp                                               
+      4          1200 gp                 9                4500 gp        14         17000 gp                   19 61000 
+                                                                                                                                     gp                    10th 01-10  -                        01-35  -                 01-40  -
+      5          1600 gp                 10               5800 gp        15 22000 
+                                                                                              gp 
+                                                                                                               20 80000 gp                                           11-24 
+                                                                                                                                                                               2d10x1000 sp     36-79      1d8 gems      41-80      1d4 minor 
+                                                                                                                                                                     25-79      6d4x100 gp      80-100      1d6 art      81-99      1 medium 
+TREASURE PER 1000XP (BASED ON DMG P170, 7-2)                                                                                                                        80-100      5d6x10 pp                                 100        1 major 
+                                                                                                                                                           11th 
+                                                                                                                                                                     01-08  -  01-24 - 01-31 - 
+     Level gp  Level gp  Level gp  Level  gp                                                                                                                         09-14     3d10x1000 sp     25-74      1d10 gems     32-84      1d4 minor 
+       1        1000   6                                1111              11 2273 
+                                                                                                 16  5833                                                            15-75      4d8x100 gp      75-100      1d6 art      85-98      1 medium 
+       2        1000                      7             1238   12  2722                                        17 7059                                        76-100 
+                                                                                                                                                                                4d10x10 
+                                                                                                                                                                                         pp                       99-100 
+                                                                                                                                                                                                                                     1 
+                                                                                                                                                                                                                                       major 
+       3        1000   8                                1417              13 3333 
+                                                                                                 18  8704                                                  12th 01-08  -                        01-17  -                 01-27  -
+       4        1000                      9             1667   14  4048                                        19 10702                                              09-14 
+                                                                                                                                                                               3d12x1000 sp     18-70      1d10 gems     28-82      1d6 minor 
+       5        1067   10  1933                                           15 4889 
+                                                                                                 20 13333                                                            15-75     1d4x1000 gp      71-100      1d8 art      83-97      1 medium 
+To help stay within the treasure guidelines, find the average party level on                                                                                        76-100      1d4x100 pp                               98-100      1 major 
+the above table, which gives you the amount of treasure to give out with                                                                                   13th 
+                                                                                                                                                                     01-08  -  01-11 - 01-19 - 
+                                                                                                                                                                     09-75     1d4x1000 gp      12-66      1d12 gems     20-73      1d6 minor 
+each 1000xp awarded.                                                                                                                                                76-100     1d10x100 pp      67-100      1d10 art     74-95      1 medium 
+                                                                                                                                                                                                                         96-100 1 
+                                                                                                                                                                                                                                       major 
+                                                                                                                                                           14th  01-08              -           01-11          -         01-19          -
+GEMS (DMG P172, 7-5)                                                                                                                                                 09-75 1d6x1000 gp          12-66      2d8 gems      20-58      1d6 minor 
+           d% Value 
+                                                  Average                                       Examples                                                            76-100     1d12x100 pp      67-100      2d6 art      59-92      1 medium 
+      01-25                      4d4 gp                   10 gp       Banded, eye, or moss agate; azurite; blue quartz;                                                                                                  93-100      1 major 
+                                                                      hematite; lapis lazuli; malachite; obsidian; rhondo-                                 15th 
+                                                                                                                                                                     01-03  -  01-09 - 01-11 - 
+                                                                      chrosite; tiger eye turquoise; irregular freshwater pearl                                      04-74     1d8x1000 gp      10-65      2d10 gems     12-46      1d10 minor 
+      26-50                   2d4x10 gp                   50 gp       Bloodstone; carnelian; chalcedony; chrysoprase; citrine;                                      75-100      3d4x100 pp      66-100      2d8 art      47-90      1 medium 
+                                                                      iolite; jasper; moonstone; onyx; peridot; clear quartz                                                                                             91-100 1 
+                                                                                                                                                                                                                                       major 
+                                                                      rock crystal; sard; sardonyx; rose, smoky, or star rose                              16th  01-03              -           01-07          -         01-40          -
+                                                                      quartz; zircon                                                                                 04-74 
+                                                                                                                                                                               1d12x1000 gp     08-64      4d6 gems      41-46      1d10 minor 
+      51-70                   4d4x10 gp                  100 gp       Amber; amethyst; chrysoberyl; cpral; red or brown-                                            75-100      3d4x100 pp      65-100      2d10 art     74-90      1d3 med. 
+                                                                      green garnet; jade; jet; white, golden, pink, or silver                                                                                            91-100      1 major 
+                                                                                                                                                           17th 
+                                                                                                                                                                     01-03  -  01-04 - 01-33 - 
+                                                                      pearl; red, red-brown, or deep green spinel; tourmaline                                        04-68     3d4x1000 gp      05-63      4d8 gems      34-83      1d3 med. 
+      71-90                  2d4x100 gp                  500 gp       Alexandrite; aquamarine; violet garnet; black pearl;                                          69-100     2d10x100 pp      64-100      3d8 art      84-100      1 major 
+                                                                      deep blue spinel; golden yellow topaz                                                18th      01-02          -           01-04          -         01-24          -
+      91-99                  4d4x100 gp                1000 gp        Emerald; white, black, or fire opal; blue saphire; fiery                                       03-65     3d6x1000 gp      05-54      3d12 gems     25-80      1d4 med. 
+                                                                      yellow or rich purple corundum; blue or black star                                            66-100      5d4x100 pp      55-100      3d10 art     81-100      1 major 
+                                                                      sapphire; star ruby                                                                  19th 
+                                                                                                                                                                     01-02  -  01-03 - 01-04 - 
+       100                  2d4x1000 gp                5000 gp        Clearest bright green emerald; blue-white, canary, pink,                                       03-65     3d8x1000 gp      04-50      6d6 gems      05-70      1d4 med. 
+                                                                      brown, or blue diamond; jacinth                                                               66-100     3d10x100 pp      51-100      6d6 art      71-100      1 major 
+                                                                                                                                                           20th      01-02          -           01-02          -         01-25          -
+                                                                                                                                                                     03-65     4d8x1000 gp      03-38      1d12 gems     26-65      1d4 med. 
+TREASURES ABOVE 20TH LEVEL                                                                                                                                          66-100     4d10x100 pp      39-100      1d10 art     66-100     1d3 major 
+     Level Magic 
+                              Items  Level Magic 
+                                                                         Items  Level Magic 
+                                                                                                                            Items                       * 50 coins weigh 1 pound 
+      21 +1  
+                                                       25 +9                                  29 +31                                                    * For treasures above 20th level, use row for 20th, and add a number of 
+      22  +2                                           26 +12  
+                                                                                              30 +42 
+      23 +4  
+                                                       27 +17                                                                                             major magic items from the chart to the left 
+      24 +6                                            28 +23  
+                                                                                                                                                        * For art and mundane items, see DMG p172; magic items, see DMG p179 
+ 
+                                                                                                                                                                                    http://members.home.net/wilson0246/DnD/index.htm
+
+
+
+Reference Sheet v2.9                                          Open Game License                                                       Campaign Sheet 3
+OPEN GAME LICENSE Version 1.0a                                                     independent Agreement with the owner of such Trademark or Registered 
+                                                                                   Trademark. The use of any Product Identity in Open Game Content does 
+The following text is the property of Wizards of the Coast, Inc. and is            not constitute a challenge to the ownership of that Product Identity. The 
+Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.         owner of any Product Identity used in Open Game Content shall retain all 
+                                                                                   rights, title and interest in and to that Product Identity. 
+1. Definitions: (a)"Contributors" means the copyright and/or trademark              
+owners who have contributed Open Game Content; (b)"Derivative  8. Identification: If you distribute Open Game Content You must clearly 
+Material" means copyrighted material including derivative works and  indicate which portions of the work that you are distributing are Open 
+translations (including into other computer languages), potation,  Game Content. 
+modification, correction, addition, extension, upgrade, improvement,   
+compilation, abridgment or other form in which an existing work may be             9. Updating the License: Wizards or its designated Agents may publish 
+recast, transformed or adapted; (c) "Distribute" means to reproduce,  updated versions of this License. You may use any authorized version of 
+license, rent, lease, sell, broadcast, publicly display, transmit or otherwise     this License to copy, modify and distribute any Open Game Content 
+distribute; (d)"Open Game Content" means the game mechanic and  originally distributed under any version of this License. 
+includes the methods, procedures, processes and routines to the extent   
+such content does not embody the Product Identity and is an enhancement            10 Copy of this License: You MUST include a copy of this License with 
+over the prior art and any additional content clearly identified as Open           every copy of the Open Game Content You Distribute. 
+Game Content by the Contributor, and means any work covered by this                 
+License, including translations and derivative works under copyright law,          11. Use of Contributor Credits: You may not market or advertise the Open 
+but specifically excludes Product Identity. (e) "Product Identity" means  Game Content using the name of any Contributor unless You have written 
+product and product line names, logos and identifying marks including              permission from the Contributor to do so. 
+trade dress; artifacts; creatures characters; stories, storylines, plots,   
+thematic elements, dialogue, incidents, language, artwork, symbols,  12 Inability to Comply: If it is impossible for You to comply with any of the 
+designs, depictions, likenesses, formats, poses, concepts, themes and  terms of this License with respect to some or all of the Open Game Content 
+graphic, photographic and other visual or audio representations; names             due to statute, judicial order, or governmental regulation then You may not 
+and descriptions of characters, spells, enchantments, personalities, teams,        Use any Open Game Material so affected. 
+personas, likenesses and special abilities; places, locations, environments,        
+creatures, equipment, magical or supernatural abilities or effects, logos,         13 Termination: This License will terminate automatically if You fail to 
+symbols, or graphic designs; and any other trademark or registered  comply with all terms herein and fail to cure such breach within 30 days of 
+trademark clearly identified as Product identity by the owner of the  becoming aware of the breach. All sublicenses shall survive the termination 
+Product Identity, and which specifically excludes the Open Game Content;           of this License. 
+(f) "Trademark" means the logos, names, mark, sign, motto, designs that             
+are used by a Contributor to identify itself or its products or the associated     14 Reformation: If any provision of this License is held to be unenforceable, 
+products contributed to the Open Game License by the Contributor (g)               such provision shall be reformed only to the extent necessary to make it 
+"Use", "Used" or "Using" means to use, Distribute, copy, edit, format,  enforceable. 
+modify, translate and otherwise create Derivative Material of Open Game             
+Content. (h) "You" or "Your" means the licensee in terms of this agreement.        15 COPYRIGHT NOTICE 
+                                                                                   Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc. 
+2. The License: This License applies to any Open Game Content that   
+contains a notice indicating that the Open Game Content may only be Used           System Reference Document Copyright 2000, Wizards of the Coast, Inc.; 
+under and in terms of this License. You must affix such a notice to any            Authors Jonathan Tweet, Monte Cook, Skip Williams, based on original 
+Open Game Content that you Use. No terms may be added to or subtracted             material by E. Gary Gygax and Dave Arneson. 
+from this License except as described by the License itself. No other terms         
+or conditions may be applied to any Open Game Content distributed using            All material wholly derived from the System Reference Document is 
+this License.                                                                      hereby designated as Open Game Content, in accordance with this license. 
+ 3.Offer and Acceptance: By Using the Open Game Content You indicate 
+Your acceptance of the terms of this License. 
+ 4. Grant and Consideration: In consideration for agreeing to use this 
+License, the Contributors grant You a perpetual, worldwide, royalty-free, 
+non-exclusive license with the exact terms of this License to Use, the Open 
+Game Content. 
+ 5.Representation of Authority to Contribute: If You are contributing 
+original material as Open Game Content, You represent that Your 
+Contributions are Your original creation and/or You have sufficient rights 
+to grant the rights conveyed by this License. 
+ 6.Notice of License Copyright: You must update the COPYRIGHT NOTICE 
+portion of this License to include the exact text of the COPYRIGHT 
+NOTICE of any Open Game Content You are copying, modifying or 
+distributing, and You must add the title, the copyright date, and the 
+copyright holder's name to the COPYRIGHT NOTICE of any original Open 
+Game Content you Distribute. 
+ 7. Use of Product Identity: You agree not to Use any Product Identity, 
+including as an indication as to compatibility, except as expressly licensed 
+in another, independent Agreement with the owner of each element of that 
+Product Identity. You agree not to indicate compatibility or co-adaptability 
+with any Trademark or Registered Trademark in conjunction with a work 
+containing Open Game Content except as expressly licensed in another, 
+
+
+

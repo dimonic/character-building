@@ -1,0 +1,175 @@
+<table summary='uber table'>
+  <tr>
+    <td colspan='2'>
+<?php
+  require_once('get_bonuses.php');
+
+  for ($c = 1; $c <= 4; $c++) {
+    $cclass = $character["class$c"];
+    if ($cclass == "None") {
+      break;
+    }
+    $char_level += $level = $character["level$c"];
+    $query = "SELECT * FROM cclasses WHERE name = \"$cclass\"";
+    $query_result = issue_query($query);
+    $class_info = $query_result->fetchRow(DB_FETCHMODE_ASSOC);
+    if (DB::isError($class_info)) {
+      die($class_info->getMessage());
+    }
+    $bab += floor($level * (($class_info[BAB] == 'Good') ? 1 : (($class_info[BAB] == 'Average') ? .75 : .5)));
+  }
+  // compute iterative attacks
+  $attacks = "+$bab";
+  if ($bab > 5) {
+    $attacks .= ",+" . ($bab - 5);
+    if ($bab > 10) {
+      $attacks .= ",+" . ($bab - 10);
+      if ($bab > 15) {
+        $attacks .= ",+" . ($bab - 15);
+      }
+    }
+  }
+  echo "<h4>Base attack bonus = $attacks, Str bonus = " . att_bonus('str') . ", Dex bonus = " . att_bonus('dex') . "</h4>\n";
+  echo "<table summary='Weapons and armor'>\n";
+  echo "<tr><th>include</th><th>Magic</th><th>Weapon</th><th>Attacks</th><th>Damage</th><th>Crit</th><th>Range</th><th>Wt</th><th>Type</th><th>Size</th><th>Special</th><th>Cost</th>\n";
+  for ($c = 1; $c <= 4; $c++) {
+    echo "<tr>\n<td>";
+    form_get_bool('characters', "weapon_{$c}_include", $character["weapon_{$c}_include"]);
+    echo "</td>\n<td>";
+    form_input_number('characters', "weapon_{$c}_bonus", $character["weapon_{$c}_bonus"], 2);
+    echo "</td>\n<td>";
+    form_input_text('characters', "weapon_{$c}", $character["weapon_$c"]);
+    echo "</td>\n<td>";
+    form_input_text('characters', "weapon_{$c}_attacks", $character["weapon_{$c}_attacks"]);
+    echo "</td>\n<td>";
+    form_input_text('characters', "weapon_{$c}_damage", $character["weapon_{$c}_damage"]);
+    echo "</td>\n<td>";
+    form_input_text('characters', "weapon_{$c}_crit", $character["weapon_{$c}_crit"]);
+    echo "</td>\n<td>";
+    form_input_number('characters', "weapon_{$c}_range", $character["weapon_{$c}_range"], 3);
+    echo "</td>\n<td>";
+    form_input_number('characters', "weapon_{$c}_weight", $character["weapon_{$c}_weight"], 2);
+    echo "</td>\n<td>";
+    form_select_enum('characters', "weapon_{$c}_type", $character["weapon_{$c}_type"]);
+    echo "</td>\n<td>";
+    form_select_enum('characters', "weapon_{$c}_size", $character["weapon_{$c}_size"]);
+    echo "</td>\n<td>";
+    form_input_text('characters', "weapon_{$c}_special", $character["weapon_{$c}_special"]);
+    echo "</td>\n<td>";
+    form_input_number('characters', "weapon_{$c}_cost", $character["weapon_{$c}_cost"], 6);
+    echo "</td>\n</tr>\n";
+  }
+?>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan='2'>
+      <table summary="Armor items">
+        <tr>
+	  <th>Magic</th><th>Armor</th><th>Bonus</th><th>Type</th><th>Max.Dex</th><th>Check pen</th><th>Spell fail</th><th>Weight</th><th>Special</th><th>Cost</th>
+	</tr>
+	<tr>
+<?php
+  echo "<td>";
+  form_input_number('characters', 'armor_magic', $character[armor_magic], 2);
+  echo "</td>\n<td>";
+  form_input_text('characters', 'armor', $character[armor]);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'armor_bonus', $character[armor_bonus], 2);
+  echo "</td>\n<td>";
+  form_select_enum('characters', 'armor_type', $character['armor_type']);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'armor_max_dex', $character[armor_max_dex], 2);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'armor_check_pen', $character[armor_check_pen], 2);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'armor_spell_fail', $character[armor_spell_fail], 3);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'armor_weight', $character[armor_weight], 3);
+  echo "</td>\n<td>";
+  form_input_text('characters', 'armor_special', $character[armor_special]);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'armor_cost', $character[armor_cost], 6);
+  echo "</td>\n";
+?>
+	</tr>
+	<tr>
+	  <th></th><th>Shield</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>
+	</tr>
+	<tr>
+	  <td>
+<?php
+  form_input_number('characters', 'shield_magic', $character["shield_magic"], 2);
+  echo "</td>\n<td>";
+  form_input_text('characters', 'shield', $character["shield"]);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'shield_bonus', $character[shield_bonus], 2);
+  echo "</td>\n<td>";
+  form_select_enum('characters', 'shield_type', $character['shield_type']);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'shield_max_dex', $character[shield_max_dex], 2);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'shield_check_pen', $character[shield_check_pen], 2);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'shield_spell_fail', $character[shield_spell_fail], 3);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'shield_weight', $character[shield_weight], 3);
+  echo "</td>\n<td>";
+  form_input_text('characters', 'shield_special', $character[shield_special]);
+  echo "</td>\n<td>";
+  form_input_number('characters', 'shield_cost', $character[shield_cost], 6);
+?>
+          </td>
+	</tr>
+      </table>
+      <table summary='magic items'>
+        <tr><th colspan='7'>Other Magic Items</th></tr>
+	<tr><th>Type</th><th>Name</th><th>Brief description</th><th>Properties <a class='Data' onClick='showHelp("magic_item_properties_help.php");'>[?]</a></th><th>Full description</th><th>Price</th><th>Weight</th></tr>
+<?php
+
+	$query = "SELECT * FROM `character_items` WHERE `character_id` = '$_POST[character_id]' ORDER BY `character_item_id`";
+	$character_item_query_result = issue_query($query);
+	$c = 0;
+	while ($item_row = $character_item_query_result->fetchRow(DB_FETCHMODE_ASSOC)) {
+	 echo "<tr>\n  <td>";
+	 form_select_enum('items', "type", $item_row["type"], '', "magic_type_{$c}");
+	 echo "</td>\n  <td>";
+	 form_input_text('items', "magic_name_{$c}", stripslashes($item_row["name"]));
+	 echo "</td>\n  <td>";
+	 form_input_text('items', "magic_brief_{$c}", stripslashes($item_row["brief_description"]));
+	 echo "</td>\n  <td>";
+	 form_input_text('items', "magic_properties_{$c}", stripslashes($item_row["properties"]));
+	 echo "</td>\n  <td>";
+	 form_input_text('items', "magic_description_{$c}", stripslashes($item_row["description"]));
+	 echo "</td>\n  <td>";
+	 form_input_number('items', "price", $item_row["price"], 6, '', "magic_price_$c");
+	 echo "</td>\n  <td>";
+	 form_input_number('items', "weight", $item_row["weight"], 6, '', "magic_weight_$c");
+	 echo "</td>\n</tr>\n";
+	 $c++;
+       }
+       $max_num = max(20, $c + 5);
+       while ($c < $max_num) {
+	 echo "<tr>\n  <td>";
+	 form_select_enum('items', 'type', $item_row["type"], '', "magic_type_{$c}");
+	 echo "</td>\n  <td>";
+	 form_input_text('items', "magic_name_{$c}", stripslashes($item_row["name"]));
+	 echo "</td>\n  <td>";
+	 form_input_text('items', "magic_brief_{$c}", stripslashes($item_row["brief_description"]));
+	 echo "</td>\n  <td>";
+	 form_input_text('items', "magic_properties_{$c}", stripslashes($item_row["properties"]));
+	 echo "</td>\n  <td>";
+	 form_input_text('items', "magic_description_{$c}", stripslashes($item_row["description"]));
+	 echo "</td>\n  <td>";
+         form_input_number('items', "price", $item_row["price"], 6, '', "magic_price_$c");
+	 echo "</td>\n<td>\n";
+         form_input_number('items', "weight", $item_row["weight"], 6, '', "magic_weight_$c");
+	 echo "</td>\n  </tr>";
+	 $c++;
+       }
+?>
+      </table>
+    </td>
+  </tr>
+</table>

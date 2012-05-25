@@ -1,0 +1,119 @@
+<img src="../images/maps/greyhawk-map-1600x1210-light.jpeg" width="1600" height="1211" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image Map file created by GIMP Imagemap Plugin -->
+<!-- #$-:GIMP Imagemap Plugin by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.0 -->
+<!-- #$AUTHOR:Dominic Amann -->
+<area shape="poly" coords="815,657,805,631,824,620,846,626,844,645,832,661" alt="Mistmarsh" href="javascript:showRegion(&apos;Mistmarsh&apos;)" />
+<area shape="poly" coords="781,611,795,647,765,684,770,712,844,667,856,603,828,556" alt="Greyhawk" href="javascript:showRegion(&apos;Greyhawk&apos;)" />
+<area shape="poly" coords="1199,853,1197,868,1236,893,1238,879,1222,855,1230,844,1177,814,1167,830" alt="Glorioles" href="javascript:showRegion(&apos;Glorioles&apos;)" />
+<area shape="poly" coords="809,599,804,606,798,608,790,618,792,630,789,638,798,649,790,658,794,667,796,665,793,657,801,650,798,642,792,636,795,630,795,624,794,618,804,609,813,604" alt="Selintan River" href="javascript:showRegion(&apos;Selintan River&apos;)" />
+<area shape="poly" coords="446,351,462,373,478,375,486,392,501,389,511,384,512,370,506,355,490,346,476,330,476,326,457,334,456,341" alt="Udgru Forest" href="javascript:showRegion(&apos;Udgru Forest&apos;)" />
+<area shape="poly" coords="669,823,676,814,646,783,633,792,648,813,649,813,655,816" alt="Silverwood" href="javascript:showRegion(&apos;Silverwood&apos;)" />
+<area shape="poly" coords="1247,180,1246,195,1257,213,1275,211,1279,186,1271,169,1254,170" alt="Sable Wood" href="javascript:showRegion(&apos;Sable Wood&apos;)" />
+<area shape="poly" coords="1134,961,1156,961,1175,941,1165,926,1141,925,1122,944" alt="Menowood" href="javascript:showRegion(&apos;Menowood&apos;)" />
+<area shape="poly" coords="677,641,697,631,705,642,681,659,680,660,671,654" alt="Iron Wood" href="javascript:showRegion(&apos;Iron Wood&apos;)" />
+<area shape="poly" coords="669,623,677,612,686,603,698,613,685,630,673,630" alt="Dapple Wood" href="javascript:showRegion(&apos;Dapple Wood&apos;)" />
+<area shape="circle" coords="1145,750,13" alt="Bonewood" href="javascript:showRegion(&apos;Bonewood&apos;)" />
+<area shape="poly" coords="810,602,819,603,843,581,847,573,855,571,870,570,883,577,898,586,907,592,902,597,913,603,917,600,912,594,912,585,906,577,910,562,910,554,896,549,894,533,861,528,848,526,827,535,802,553,792,576,784,599,774,609,794,602,795,594,814,579,812,602" alt="Nyr Dyv" href="javascript:showRegion(&apos;Nyr Dyv&apos;)" />
+<area shape="poly" coords="847,722,841,710,849,703,863,711,866,725,857,731" alt="Brass Hills" href="javascript:showRegion(&apos;Brass hills&apos;)" />
+<area shape="poly" coords="819,683,876,664,898,672,933,699,952,739,958,764,935,748,919,751,913,734,916,715,891,695,864,683,839,692,824,697" alt="Abbor-Alz" href="javascript:showRegion(&apos;Abbor-Alz&apos;)" />
+<area shape="poly" coords="813,672,844,643,850,608,832,587,860,571,880,585,865,635,874,658" alt="Cairn Hills" href="javascript:showRegion(&apos;Cairn hills&apos;)" />
+<area shape="circle" coords="703,650,9" alt="Verbobonc" href="javascript:showRegion(&apos;Verbobonc&apos;)" />
+<area shape="circle" coords="1019,869,9" alt="Irongate" href="javascript:showRegion(&apos;Irongate&apos;)" />
+<area shape="poly" coords="594,532,610,500,635,497,661,510,667,530,668,585,645,572,628,553" alt="Highfolk" href="javascript:showRegion(&apos;Highfolk&apos;)" />
+<area shape="poly" coords="601,265,648,252,687,261,706,253,725,361,691,343,637,347,585,336" alt="Wolf Nomads" href="javascript:showRegion(&apos;Wolf Nomads&apos;)" />
+<area shape="poly" coords="711,274,796,281,809,382,799,414,816,452,797,492,750,450,750,454,732,390" alt="Empire of Iuz" href="javascript:showRegion(&apos;Empire of Iuz&apos;)" />
+<area shape="poly" coords="719,176,705,250,715,275,755,263,761,246,787,208,785,171" alt="Blackmoor" href="javascript:showRegion(&apos;Blackmoor&apos;)" />
+<area shape="poly" coords="561,328,547,379,554,424,563,462,595,447,620,450,629,433,642,388,635,348" alt="Perrenland" href="javascript:showRegion(&apos;Perrenland&apos;)" />
+<area shape="poly" coords="801,282,864,264,880,228,788,209,764,238,770,268" alt="Barren Wastes" href="javascript:showRegion(&apos;Barren Wastes&apos;)" />
+<area shape="poly" coords="804,346,792,277,869,265,900,291,944,303,903,352,841,333" alt="Rovers of the Barrens" href="javascript:showRegion(&apos;Rovers of the Barrens&apos;)" />
+<area shape="poly" coords="465,305,512,342,518,384,494,393,483,391,472,406,456,415,450,449,430,467,397,429,398,350" alt="Ekbir" href="javascript:showRegion(&apos;Ekbir&apos;)" />
+<area shape="poly" coords="432,470,456,415,477,402,482,381,515,382,499,413,485,494,464,524,458,496" alt="Tusmit" href="javascript:showRegion(&apos;Tusmit&apos;)" />
+<area shape="poly" coords="523,596,552,572,578,583,594,612,539,653,517,628" alt="Bissel" href="javascript:showRegion(&apos;Bissel&apos;)" />
+<area shape="poly" coords="599,564,616,545,643,557,663,576,669,602,718,593,725,650,676,674,598,613,574,582" alt="Veluna" href="javascript:showRegion(&apos;Veluna&apos;)" />
+<area shape="poly" coords="669,601,727,593,750,622,797,587,816,543,796,543,795,523,775,512,787,471,755,480,752,454,705,469,662,520" alt="Furyondy" href="javascript:showRegion(&apos;Furyondy&apos;)" />
+<area shape="poly" coords="685,694,711,750,728,762,747,728,751,697,726,692,717,676" alt="Celene" href="javascript:showRegion(&apos;Celene&apos;)" />
+<area shape="poly" coords="825,782,813,794,801,809,785,851,915,895,927,808,867,796" alt="Pomarj" href="javascript:showRegion(&apos;Pomarj&apos;)" />
+<area shape="poly" coords="608,712,634,686,689,730,677,761,642,785,633,792,618,750" alt="Duchy of Ulek" href="javascript:showRegion(&apos;Duchy of Ulek&apos;)" />
+<area shape="poly" coords="687,841,664,825,637,804,638,783,624,777,606,755,543,710,520,737,520,788,553,795,588,819,604,858,638,884,694,895" alt="Keoland" href="javascript:showRegion(&apos;Keoland&apos;)" />
+<area shape="poly" coords="549,855,485,875,458,884,477,929,527,934,562,936,589,912,602,860,563,816,540,806,532,827" alt="Yeomanry" href="javascript:showRegion(&apos;Yeomanry&apos;)" />
+<area shape="poly" coords="522,1006,506,968,559,942,577,918,595,913,625,916,676,908,769,993,598,1005" alt="Sea Princes" href="javascript:showRegion(&apos;Sea Princes&apos;)" />
+<area shape="poly" coords="635,794,684,748,719,756,729,767,746,796,686,837,641,808" alt="County of Ulek" href="javascript:showRegion(&apos;County of Ulek&apos;)" />
+<area shape="poly" coords="818,677,880,661,939,706,961,774,853,757,817,737" alt="Bright Lands" href="javascript:showRegion(&apos;Bright Lands&apos;)" />
+<area shape="poly" coords="612,1111,630,1166,745,1165,790,1097,715,994" alt="Amedio Jungle" href="javascript:showRegion(&apos;Amedio Jungle&apos;)" />
+<area shape="poly" coords="959,788,975,673,936,612,946,588,973,584,966,567,985,541,1003,517,1049,567,1132,593,1133,631,1151,652,1200,688,1102,694,997,783" alt="Kingdom of Nyrond" href="javascript:showRegion(&apos;Nyrond&apos;)" />
+<area shape="poly" coords="926,837,995,799,1017,857,1018,891,943,860" alt="Onwal" href="javascript:showRegion(&apos;Onnwal&apos;)" />
+<area shape="poly" coords="1021,889,1090,915,1115,903,1112,867,1138,839,1183,845,1263,837,1258,819,1302,783,1298,683,1100,695,1076,749,1007,811" alt="Ahlissa" href="javascript:showRegion(&apos;Ahlissa&apos;)" />
+<area shape="poly" coords="1091,914,1160,885,1199,843,1269,837,1289,866,1295,967,1228,1037,1140,1023" alt="Sunndi" href="javascript:showRegion(&apos;Sunndi&apos;)" />
+<area shape="poly" coords="822,1094,1094,1016,1229,1038,1227,1104,1148,1167,814,1167" alt="Scarlet Brotherhood" href="javascript:showRegion(&apos;Scarlet Brotherhood&apos;)" />
+<area shape="poly" coords="1227,1038,1229,1073,1295,1074,1474,943,1433,870,1329,938" alt="Lordship of the Isles" href="javascript:showRegion(&apos;Lordship of the Isles&apos;)" />
+<area shape="poly" coords="1298,784,1256,821,1288,863,1393,857,1344,761,1329,791" alt="Old Medegia" href="javascript:showRegion(&apos;Old Medegia&apos;)" />
+<area shape="poly" coords="1344,773,1340,726,1312,675,1349,636,1389,695,1391,739" alt="Solnor Compact" href="javascript:showRegion(&apos;Solnor Compact&apos;)" />
+<area shape="poly" coords="1365,582,1377,678,1407,778,1427,780,1443,615" alt="Sea Barons" href="javascript:showRegion(&apos;Sea Barons&apos;)" />
+<area shape="poly" coords="1345,645,1301,683,1189,689,1226,683,1234,671,1210,605,1188,591,1188,560,1156,560,1172,501,1243,477,1342,472,1391,555,1367,601" alt="North Kingdom" href="javascript:showRegion(&apos;North Kingdom&apos;)" />
+<area shape="poly" coords="1181,268,1180,234,1192,222,1247,256,1302,245,1348,318,1298,402" alt="Snow Barbarians" href="javascript:showRegion(&apos;Snow Barbarians&apos;)" />
+<area shape="poly" coords="1056,131,1071,184,1149,176,1239,180,1264,220,1318,130" alt="Ice Barbarians" href="javascript:showRegion(&apos;Ice Barbarians&apos;)" />
+<area shape="poly" coords="1435,838,1441,758,1515,776,1530,926,1474,924,1444,891" alt="Lendore Isles" href="javascript:showRegion(&apos;Lendore Isles&apos;)" />
+<area shape="poly" coords="422,720,453,747,468,733,468,709,480,699,514,717,534,706,478,688,479,663,417,704" alt="Geoff" href="javascript:showRegion(&apos;Geoff&apos;)" />
+<area shape="poly" coords="475,758,493,738,521,762,538,795,528,829,484,822,445,852,425,801,444,779" alt="Sterich" href="javascript:showRegion(&apos;Sterich&apos;)" />
+<area shape="poly" coords="182,430,289,371,396,422,415,462,431,467,454,489,466,527,476,576,454,588,365,564,349,521,233,520,155,543" alt="Zeif" href="javascript:showRegion(&apos;Zeif&apos;)" />
+<area shape="poly" coords="332,688,317,641,365,565,456,590" alt="Ull" href="javascript:showRegion(&apos;Ull&apos;)" />
+<area shape="poly" coords="477,533,498,491,558,475,598,516,555,528,539,517,499,538" alt="Ket" href="javascript:showRegion(&apos;Ket&apos;)" />
+<area shape="poly" coords="429,662,436,680,489,634,497,650,520,637,506,615,469,623" alt="Valley of the Mage" href="javascript:showRegion(&apos;Valley of the Mage&apos;)" />
+<area shape="poly" coords="540,651,586,623,634,681,617,707,616,730,599,746,563,716,568,704" alt="Gran March" href="javascript:showRegion(&apos;Gran March&apos;)" />
+<area shape="circle" coords="769,617,9" alt="Dyvers" href="javascript:showRegion(&apos;Dyvers&apos;)" />
+<area shape="poly" coords="669,342,727,363,708,456,688,472,696,484,675,509,625,514,625,479,627,460,645,429,659,416,673,371,667,358" alt="Vesve Forest" href="javascript:showRegion(&apos;Vesve Forest&apos;)" />
+<area shape="poly" coords="290,745,316,704,293,671,300,614,364,566,350,520,238,520,145,549,145,969,376,930,418,894,397,856,333,835,348,804" alt="Plains of the Paynims" href="javascript:showRegion(&apos;Paynims&apos;)" />
+<area shape="poly" coords="490,187,549,240,566,234,603,268,597,305,553,322,452,298" alt="Tiger Nomads" href="javascript:showRegion(&apos;Tiger Nomads&apos;)" />
+<area shape="poly" coords="531,206,530,223,546,239,565,235,602,263,652,250,687,261,708,250,713,217,676,199,648,202,627,200,603,193,587,197,550,196" alt="Burneal Forest" href="javascript:showRegion(&apos;Burneal Forest&apos;)" />
+<area shape="circle" coords="621,756,10" alt="Axewood" href="javascript:showRegion(&apos;Axewood&apos;)" />
+<area shape="poly" coords="1127,589,1139,574,1160,582,1172,560,1188,560,1190,589,1210,604,1214,619,1225,638,1233,667,1228,687,1195,686,1170,662,1141,647" alt="Adri Forest" href="javascript:showRegion(&apos;Adri Forest&apos;)" />
+<area shape="poly" coords="909,655,924,629,952,629,970,647,971,667,956,690,934,695,905,683" alt="Celadon Forest" href="javascript:showRegion(&apos;Celadon Forest&apos;)" />
+<area shape="poly" coords="474,685,510,696,531,700,554,711,565,706,558,686,542,656,521,637,485,655" alt="Dim Forest" href="javascript:showRegion(&apos;Dim Forest&apos;)" />
+<area shape="poly" coords="587,910,621,911,662,916,667,894,667,876,649,878,633,886,620,880,624,864,602,859,594,879" alt="Dreadwood" href="javascript:showRegion(&apos;Dreadwood&apos;)" />
+<area shape="poly" coords="812,397,796,412,806,441,819,450,838,409,860,394,886,399,907,393,914,356,875,336,830,336,813,348,803,363,813,382" alt="Fellreev Forest" href="javascript:showRegion(&apos;Fellreev Forest&apos;)" />
+<area shape="poly" coords="1006,523,1034,542,1052,567,1083,556,1072,509,1055,489,1031,480" alt="Gamboge Forest" href="javascript:showRegion(&apos;Gamboge Forest&apos;)" />
+<area shape="poly" coords="743,600,740,629,762,623,785,621,794,649,763,660,729,653,718,629,723,589" alt="Gnarley Forest" href="javascript:showRegion(&apos;Gnarley Forest&apos;)" />
+<area shape="poly" coords="1300,683,1296,705,1302,730,1287,758,1304,772,1323,785,1341,768,1350,744,1341,724,1329,702,1318,678" alt="Grandwood Forest" href="javascript:showRegion(&apos;Grandwood Forest&apos;)" />
+<area shape="poly" coords="414,702,431,726,454,749,427,767,409,767,385,727" alt="Hornwood" href="javascript:showRegion(&apos;Hornwood&apos;)" />
+<area shape="poly" coords="1019,256,1028,278,1075,225,1053,209,1022,210,1013,237" alt="Hraak Forest" href="javascript:showRegion(&apos;Hraak Forest&apos;)" />
+<area shape="poly" coords="1177,437,1181,453,1194,457,1203,448,1201,428,1185,419" alt="Loftwood" href="javascript:showRegion(&apos;Loftwood&apos;)" />
+<area shape="poly" coords="976,457,987,448,999,443,1002,460,983,478,974,476" alt="Nutherwood" href="javascript:showRegion(&apos;Nutherwood&apos;)" />
+<area shape="poly" coords="465,704,467,730,503,734,516,720,494,700" alt="Otywood" href="javascript:showRegion(&apos;Otywood&apos;)" />
+<area shape="poly" coords="976,458,1001,442,1001,418,984,409,961,417,956,431,956,460,971,471" alt="Phostwood" href="javascript:showRegion(&apos;Phostwood&apos;)" />
+<area shape="poly" coords="1110,878,1120,892,1132,892,1156,889,1170,881,1188,859,1203,851,1189,839,1174,835,1156,843,1133,841,1116,859" alt="Rieuwood" href="javascript:showRegion(&apos;Rieuwood&apos;)" />
+<area shape="poly" coords="1391,137,1422,126,1447,129,1449,145,1427,166,1404,162,1399,154,1389,153" alt="Sablewood" href="javascript:showRegion(&apos;Sablewood&apos;)" />
+<area shape="poly" coords="535,689,544,679,563,695,569,702,570,710,566,710,551,698,541,696,542,696" alt="Silverwood" href="javascript:showRegion(&apos;Silverwood&apos;)" />
+<area shape="poly" coords="1155,256,1165,279,1180,260,1174,237,1173,214,1155,202,1149,226" alt="Spikey Forest" href="javascript:showRegion(&apos;Spikey Forest&apos;)" />
+<area shape="poly" coords="749,739,764,743,772,768,785,778,796,776,826,796,820,802,798,803,781,808,765,809,752,791,736,775,738,755" alt="Suss Forest" href="javascript:showRegion(&apos;Suss Forest&apos;)" />
+<area shape="poly" coords="898,462,922,451,913,436,894,436,880,448" alt="Tangles" href="javascript:showRegion(&apos;Tangles&apos;)" />
+<area shape="poly" coords="1094,385,1111,398,1121,395,1113,384,1097,360,1089,336,1066,337,1078,363" alt="Timberway Forest" href="javascript:showRegion(&apos;Timberway Forest&apos;)" />
+<area shape="poly" coords="735,739,758,737,760,723,769,707,762,672,760,659,730,649,716,676,723,694,750,697,752,714,744,728" alt="Welkwood" href="javascript:showRegion(&apos;Welkwood&apos;)" />
+<area shape="poly" coords="327,692,475,575,524,597,506,648,478,660,455,677,385,726,391,729" alt="Barrier Peaks" href="javascript:showRegion(&apos;Barrier Peaks&apos;)" />
+<area shape="poly" coords="629,404,624,344,646,343,653,385,644,435,628,451,609,449" alt="Clatspur Range" href="javascript:showRegion(&apos;Clatspur Range&apos;)" />
+<area shape="poly" coords="1165,209,1232,246,1232,284,1252,299,1267,283,1274,255,1269,220,1251,206,1237,180,1196,171,1152,176,1085,180,1076,202" alt="Corusk Mountains" href="javascript:showRegion(&apos;Corusk Mountains&apos;)" />
+<area shape="poly" coords="373,715,414,772,465,925,543,948,458,995,399,855,331,833,351,805,333,771,288,749,325,695" alt="Crystalmist Mountains" href="javascript:showRegion(&apos;Crystalmist Mountains&apos;)" />
+<area shape="poly" coords="1146,209,1096,251,1065,307,1066,336,1051,353,1023,355,990,387,996,354,1014,322,975,325,965,338,942,336,947,311,966,301,1022,306,1033,279,1077,229,1100,203" alt="Griff Mountains" href="javascript:showRegion(&apos;Griff Mountains&apos;)" />
+<area shape="poly" coords="469,990,509,967,529,1037,560,1076,571,1111,590,1105,615,1116,628,1166,544,1166,450,1054" alt="Hellfurnaces" href="javascript:showRegion(&apos;Hellfurnaces&apos;)" />
+<area shape="poly" coords="442,853,453,883,492,874,513,857,551,857,549,837,521,824,490,818,465,841" alt="Jotens" href="javascript:showRegion(&apos;Jotens&apos;)" />
+<area shape="poly" coords="1047,400,1047,361,1066,336,1083,372,1120,411,1139,444,1132,466,1114,494,1119,557,1077,547,1078,509,1090,483,1112,455,1088,424,1065,406" alt="Rakers" href="javascript:showRegion(&apos;Rakers&apos;)" />
+<area shape="poly" coords="59,975,152,971,381,930,411,899,447,977,391,985,358,973,280,984,202,1027,171,1015,128,1019,59,1020" alt="Sulhaut Mountains" href="javascript:showRegion(&apos;Sulhaut Mountains&apos;)" />
+<area shape="poly" coords="344,601,316,645,330,691,316,704,296,670,296,618,329,584" alt="Ulsprue" href="javascript:showRegion(&apos;Ulsprue&apos;)" />
+<area shape="poly" coords="508,352,518,384,498,415,496,489,560,479,600,513,604,455,590,446,563,464,551,424,559,373,548,345,590,311,577,302,550,326,531,314,495,309,474,318" alt="Yatil Mountains" href="javascript:showRegion(&apos;Yatil Mountains&apos;)" />
+<area shape="poly" coords="810,480,871,475,876,443,900,435,923,447,943,489,973,479,956,458,959,431,928,416,936,396,911,386,900,403,866,396,838,406" alt="Bandit Kingdoms" href="javascript:showRegion(&apos;Bandit Kingdoms&apos;)" />
+<area shape="poly" coords="787,540,793,503,809,480,875,473,926,487,921,500,924,514,915,512,902,521,891,537,824,555" alt="Shield Lands" href="javascript:showRegion(&apos;Shield Lands&apos;)" />
+<area shape="poly" coords="1105,488,1103,546,1128,590,1161,577,1140,545,1148,517,1154,502,1214,487,1236,459,1192,455,1141,453" alt="Bone March" href="javascript:showRegion(&apos;Bone March&apos;)" />
+<area shape="poly" coords="1071,338,1050,310,1058,290,1081,273,1091,247,1141,217,1154,228,1157,284,1129,361" alt="Frost Barbarians" href="javascript:showRegion(&apos;Frost barbarians&apos;)" />
+<area shape="poly" coords="857,604,843,670,903,669,913,643,942,620,918,599,894,568,839,571" alt="Duchy of Urnst" href="javascript:showRegion(&apos;Duchy of Urnst&apos;)" />
+<area shape="poly" coords="1001,421,1005,462,977,479,1010,519,1038,478,1072,506,1091,494,1104,476,1106,440,1083,417,1053,404,1058,379,1050,355,1019,357,1009,378,1004,394" alt="Theocracy of the Pale" href="javascript:showRegion(&apos;Pale&apos;)" />
+<area shape="poly" coords="1183,434,1165,444,1146,440,1138,439,1117,420,1121,410,1110,403,1121,392,1140,384,1193,413" alt="Ratik" href="javascript:showRegion(&apos;Ratik&apos;)" />
+<area shape="poly" coords="961,298,1019,307,1032,281,1015,235,1042,186,945,160" alt="Stonehold" href="javascript:showRegion(&apos;Stonehold&apos;)" />
+<area shape="poly" coords="957,428,976,407,1001,414,992,351,1011,322,976,320,947,343,930,418,930,419" alt="Tenh" href="javascript:showRegion(&apos;Tenh&apos;)" />
+<area shape="poly" coords="937,611,949,588,966,587,974,580,965,570,980,551,1006,515,975,476,974,499,959,484,960,516,926,485,923,507,893,526,883,552,896,576" alt="County of Urnst" href="javascript:showRegion(&apos;County of Urnst&apos;)" />
+<area shape="poly" coords="686,840,695,899,738,898,786,850,760,803,741,797" alt="Principality of Ulek" href="javascript:showRegion(&apos;Principality of Ulek&apos;)" />
+<area shape="poly" coords="872,259,899,295,882,278,898,292,910,290,924,301,952,295,964,285,949,275,927,269,921,260,880,249" alt="Forlorn Forest" href="javascript:showRegion(&apos;Forlorn Forest&apos;)" />
+<area shape="poly" coords="577,618,600,607,692,697,743,795,725,805,680,766,663,714,630,708,629,709,612,682" alt="Lortmill Mountains" href="javascript:showRegion(&apos;Lortmill Mountains&apos;)" />
+</map>

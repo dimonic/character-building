@@ -1,0 +1,33 @@
+<?xml version="1.0"?> 
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+<xsl:output method="xml" indent="yes"/>
+	   
+<xsl:template match="/newsfeed">
+<rss version="0.92">
+<channel>
+<xsl:apply-templates select="channel"/>
+</channel>
+</rss>
+</xsl:template>
+
+<xsl:template match="channel">
+<xsl:if test="@id='Liftoff'">
+<title><xsl:value-of select="@id"/></title>
+<link><xsl:value-of select="@url"/></link>
+<description><xsl:value-of select="@name"/></description>
+<cloud/>
+
+<xsl:apply-templates select="item"/>
+</xsl:if>
+</xsl:template>
+
+<xsl:template match="item">
+<item>
+<link><xsl:value-of select="href"/></link>
+<title><xsl:value-of select="title"/></title>
+<description><xsl:value-of select="intro"/></description>
+</item>
+</xsl:template>
+
+</xsl:stylesheet>

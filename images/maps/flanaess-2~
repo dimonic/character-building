@@ -1,0 +1,41 @@
+<img src="Greyhawk_1600x1024.jpg" width="1600" height="1024" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image Map file created by GIMP Imagemap Plugin -->
+<!-- #$-:GIMP Imagemap Plugin by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.0 -->
+<!-- #$AUTHOR:Dominic Amann -->
+<area shape="poly" coords="489,468,533,468,539,486,562,493,563,528,588,535,590,558,549,594,496,550,471,519,464,472" alt="Veluna" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Veluna" />
+<area shape="poly" coords="400,509,438,489,470,506,475,527,496,551,420,571" alt="Bissel" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Bissel" />
+<area shape="poly" coords="473,469,502,403,571,429,555,486" alt="Highfolk" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Highfolk" />
+<area shape="poly" coords="556,489,597,556,650,534,728,459,707,453,717,436,683,429,654,366,605,381,562,432" alt="Furyondy" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Furyony" />
+<area shape="poly" coords="561,588,619,672,648,656,645,564,625,543" alt="Celene" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Celene" />
+<area shape="poly" coords="687,670,673,747,816,763,811,689" alt="Pomarj" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Pomarj" />
+<area shape="poly" coords="503,602,529,576,584,620,556,684,542,702,528,682,513,640" alt="Duchy of Ulek" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Duchy of Ulek" />
+<area shape="poly" coords="592,766,588,725,544,701,527,680,511,635,489,626,411,692,420,718,440,728,466,718,490,765,523,820" alt="Keoland" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Keoland" />
+<area shape="poly" coords="413,711,374,712,346,754,458,905,460,854,509,825,525,819,467,721,435,727" alt="Yeomanry" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Yeomanry" />
+<area shape="poly" coords="462,906,463,854,506,826,520,827,525,812,539,821,610,813,662,870,509,906" alt="Sea Princes" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Sea Princes" />
+<area shape="poly" coords="543,700,585,621,633,681,589,725" alt="County of Ulek" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=County of Ulek" />
+<area shape="poly" coords="695,544,703,576,825,575,853,549,872,527,855,518,815,474,745,487,696,517" alt="Duchy of Urnst" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Duchy of Urnst" />
+<area shape="poly" coords="728,583,865,572,877,693,762,669,704,618" alt="Bright Lands" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Bright Lands" />
+<area shape="poly" coords="530,975,529,1022,659,900,616,870" alt="Amedio Jungle" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Amedio Jungle" />
+<area shape="poly" coords="881,688,858,532,958,442,1009,474,1100,434,1097,492,1115,513,1112,564,1066,556,1066,573,1065,579,1030,609" alt="Kingdom of Nyrond" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Kingdom of Nyrond" />
+<area shape="poly" coords="1034,609,1045,630,1086,645,1136,604,1101,560,1071,553,1063,580" alt="Old Almor" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Old Almor" />
+<area shape="poly" coords="839,736,908,698,930,756,931,790,856,759" alt="Onwal" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Onwal" />
+<area shape="poly" coords="933,768,1095,724,1198,743,1146,605,1078,645,1043,628,919,690" alt="Ahlissa" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Ahlissa" />
+<area shape="poly" coords="931,769,1097,724,1193,744,1223,774,1205,860,1126,918,1066,904" alt="Sunndi" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Sunndi" />
+<area shape="poly" coords="848,941,1034,895,1131,921,1121,985,1069,1021,947,1021,944,1021,885,977" alt="Scarlet Brotherhood" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Scarlet Brotherhood" />
+<area shape="poly" coords="1129,920,1150,952,1200,972,1391,843,1340,790" alt="Lordship of the Isles" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Lordship of the Isles" />
+<area shape="poly" coords="1197,745,1217,772,1254,793,1338,774,1311,704,1275,679" alt="Old Medegia" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Old Medegia" />
+<area shape="poly" coords="1300,693,1279,678,1273,602,1323,580,1358,635,1354,685" alt="Solnor Compact" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Solnor Compact" />
+<area shape="poly" coords="1363,535,1352,730,1394,726,1441,588" alt="Sea Barons" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Sea Barons" />
+<area shape="poly" coords="1274,601,1277,682,1196,740,1149,610,1185,580,1147,500,1116,503,1158,428,1207,420,1306,415,1370,516,1359,568" alt="North Kingdom" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=North Kingdom" />
+<area shape="poly" coords="1190,201,1185,160,1224,141,1304,145,1382,209,1376,234,1311,308" alt="Snow Barbarians" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Snow Barbarians" />
+<area shape="poly" coords="1331,89,1308,120,1367,150,1411,130,1427,72" alt="Ice Barbarians" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Ice Barbarians" />
+<area shape="poly" coords="1376,779,1406,708,1479,723,1469,877,1381,842" alt="Lendore Isles" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Lendore Isles" />
+<area shape="poly" coords="317,645,357,645,382,617,375,548,339,573,310,561,280,626" alt="Geoff" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Geoff" />
+<area shape="poly" coords="361,642,378,618,421,643,410,691,419,710,381,711,347,752,308,679,308,680,325,668" alt="Sterich" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Sterich" />
+<area shape="poly" coords="52,380,103,313,222,358,222,460,53,518" alt="Zeif" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Zeif" />
+<area shape="poly" coords="199,617,169,564,201,510,311,530" alt="Ull" href="http://www.lbs.ca/~newdnd/greyhawk/geography.php?region=Ull" />
+</map>

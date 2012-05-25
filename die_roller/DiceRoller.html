@@ -1,0 +1,95 @@
+<html><head><title>Dice Roller</title></head>
+<body bgcolor="#222222">
+
+
+<script language="JavaScript1.2">
+<!--
+<!-- Dice Roller Code by Kevin Savage (ksav@canada.com) //-->
+
+function rolldice() {
+
+var routput = document.form1.runningtotal.value + "("; 
+var rtotal = 0;
+var rnum;
+var rmultiplier = document.form1.multiplier.value;
+if (document.form1.multiplier.value == "") {rmultiplier = 1}
+for (var i = 1; i <= rmultiplier; i++) {
+rnum = Math.floor(Math.random() * document.form1.die.value) + 
+1;
+rtotal = rtotal + rnum;
+if (i > 1) {routput = routput + "+"}
+routput = routput + rnum;
+}
+rtotal = rtotal + Math.floor(document.form1.bonus.value);
+routput = routput + ")";
+if (document.form1.bonus.value != "") {
+routput = routput + "+" + document.form1.bonus.value;
+}
+routput = routput + "=" + rtotal + "\n";
+document.form1.runningtotal.value = routput; 
+
+}
+
+//-->
+</script> 
+
+<table bordercolordark="#E0853F" bordercolorlight="#E0853F" align="center" border="1" bordercolor="#e0853f" cellpadding="0" cellspacing="0">
+<tbody><tr bgcolor="#e0853f"> 
+<td>
+<form method="post" action="" name="form1">
+<div align="center"><font color="#ffffff" face="Arial, Helvetica, sans-serif" size="3"><b>Dice Roller</b></font></div>
+</form></td>
+</tr>
+<tr>
+<td>
+<table align="left" bgcolor="#000000" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr> 
+<td> 
+<div align="center"><font color="#ffffff" face="Arial, Helvetica, 
+sans-serif" size="3"><b></b></font></div>
+</td>
+</tr>
+<tr> 
+<td> 
+<div align="center">
+<font color="#ffffff" face="Arial, Helvetica, sans-serif" size="3"><b>
+<input size="3" name="multiplier" type="text">
+d<input size="3" name="die" type="text">
++<input size="3" name="bonus" type="text">
+</b></font>
+</div>
+</td>
+</tr>
+<tr> 
+<td> 
+<div align="center"><font color="#000000" face="Arial,Helvetica,sans-serif" size="2"><a href="javascript:void(null)" onclick="rolldice()">Roll Dice</a></font> 
+</div>
+</td>
+</tr>
+<tr> 
+<td> 
+<div align="center"> 
+<textarea name="runningtotal" rows="15" cols="30"></textarea>
+</div>
+</td>
+</tr>
+<tr> 
+<td> 
+<div align="center"> 
+<input name="Reset" value="Reset" type="reset">
+</div>
+</td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+</tbody></table>
+<br> 
+<div align="center"><font color="#ffffff" face="Arial, Helvetica, sans-serif" size="1">© 2001 Kevin Savage. All rights 
+reserved.</font></div>
+
+
+
+</body></html>

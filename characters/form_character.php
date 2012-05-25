@@ -1,0 +1,277 @@
+<?php
+  if (empty($character[sourcebooks])) {
+    $character[sourcebooks] = $_COOKIE[sourcebooks];
+  }
+  $query = "SELECT * FROM cclasses WHERE $source_select ORDER BY source, name";
+  $query_result = issue_query($query);
+  $c = 0;
+  while ($cclass_row = $query_result->fetchRow(DB_FETCHMODE_ASSOC)) {
+    if (DB::isError($cclass_row)) {
+      die($class_row->getMessage());
+    }
+    $class_list[$c][0] = $cclass_row[name];
+    $class_list[$c][1] = $cclass_row[prestige];
+    $class_list[$c][2] = $cclass_row[source];
+    $c++;
+  }
+
+  $query = "SELECT * FROM races WHERE $source_select ORDER BY source, name";
+
+  $query_result = issue_query($query);
+  $c = 0;
+  while ($race_row = $query_result->fetchRow(DB_FETCHMODE_ASSOC)) {
+    if (DB::isError($cclass_row)) {
+      die($race_row->getMessage());
+    }
+    $race_list[$c][0] = $race_row[name];
+    $race_list[$c][1] = $race_row[source];
+    $race_list[$c][2] = $race_row[str_delta];
+    $race_list[$c][3] = $race_row[dex_delta];
+    $race_list[$c][4] = $race_row[con_delta];
+    $race_list[$c][5] = $race_row[int_delta];
+    $race_list[$c][6] = $race_row[wis_delta];
+    $race_list[$c][7] = $race_row[cha_delta];
+    $c++;
+  }
+
+?>
+<table summary='uber table'>
+  <tr>
+    <td>
+      <table summary='Left column'>
+        <tr>
+	  <td>
+	    <table summary='personal character details table: name, race, height, afiliations etc'>
+	      <tr>
+	        <th>Campaign name</th>
+		<td><?= form_input_text('characters', "campaign", $character[campaign]); ?></td>
+	      </tr>	
+	      <tr>
+	        <th>Dungeon Master</th>
+		<td><?= form_input_text('characters', "dm", $character[dm]); ?></td>
+	      </tr>
+	      <tr>
+	        <th>Source Books</th>
+		<td>
+		  <a class='Data' onClick='pickCharSources("<?= urlencode($character[sourcebooks]) ?>");'>Select</a>
+		  <?= form_input_hidden('characters', 'sourcebooks', $character[sourcebooks]); ?>
+		</td>
+	      </tr>
+	      <tr>
+	        <th>Character Name</th>
+		<td><?= form_input_text('characters', "name", $character[name]); ?></td>
+	      </tr>
+	      <tr>
+	        <th>Race</th>
+	        <td>
+	          <select name="race" onChange="updateDeltas()">
+		    <option value="None"></option>
+<?php
+$source = $race_list[0][1];
+echo "<optgroup label=\"$source\">\n";
+foreach ($race_list as $race) {
+  if ($race[1] != $source) {
+    $source = $race[1];
+    echo "</optgroup>\n";
+    echo "<optgroup label=\"$source\">\n";
+  }
+  if ($character[race] == "$race[0]") {
+    echo "<option value=\"$race[0]\" selected>$race[0]</option>\n";
+    $str_delta = $race[2];
+    $dex_delta = $race[3];
+    $con_delta = $race[4];
+    $int_delta = $race[5];
+    $wis_delta = $race[6];
+    $cha_delta = $race[7];
+  } else {
+    echo "<option value=\"$race[0]\">$race[0]</option>\n";
+  }
+}
+echo "</optgroup>\n";
+echo "<input type='hidden' name='str_delta' value='$str_delta'>\n";	    
+echo "<input type='hidden' name='dex_delta' value='$dex_delta'>\n";	    
+echo "<input type='hidden' name='con_delta' value='$con_delta'>\n";	    
+echo "<input type='hidden' name='int_delta' value='$int_delta'>\n";	    
+echo "<input type='hidden' name='wis_delta' value='$wis_delta'>\n";	    
+echo "<input type='hidden' name='cha_delta' value='$cha_delta'>\n";	    
+?>
+                  </select>
+	        </td>
+	      </tr>
+	      <tr>
+	        <th>Region of Origin</th>
+	        <td><?= form_input_text('characters', "region", $character["region"]); ?></td>
+	      </tr>
+	      <tr>
+	        <th>Gender</th>
+	        <td>
+	          <?= form_select_enum('characters', 'gender', $character["gender"]); ?>
+	        </td>
+	      </tr>
+	      <tr>
+	        <th>Alignment</th>
+	        <td>
+	          <?= form_select_enum('characters', 'alignment', $character["alignment"]); ?>
+	        </td>
+	      </tr>
+	      <tr>
+	        <th>Patron Deity</th>
+	        <td><?= form_input_text('characters', "deity", $character["deity"]); ?></td>
+	      </tr>
+
+	    </table> <!-- end personal character details table -->
+	  </td>
+        </tr>
+        <tr>
+          <td>
+	    <table summary='attribute selection table'>
+	      <tr><td>&nbsp;</td><th colspan='2'>Initial/cost<a class='Data' onClick='showHelp("initial_attributes_help.php");'>[?]</a></th><th>Current<a class='Data' onClick='showHelp("current_attributes_help.php");'>[?]</a></th>
+<?php
+
+	    foreach(array('str', 'dex', 'con', 'intel', 'wis', 'cha') as $att) {
+	      if (empty($character["init_$att"])) {
+		$character["init_$att"] = 8;
+	      }
+	      if (empty($character["$att"])) {
+		$character["$att"] = $character["init_$att"];
+	      }
+	      if ($att == 'intel') {
+		$name = 'Int';
+	      } else {
+		$name = (strtoupper(substr($att, 0, 1)) . substr($att, 1));
+	      }
+	      echo "<tr><th>$name</th><td>";
+	      form_input_number('characters', "init_$att", $character["init_$att"], 2, "updatePoints();");
+	      echo "</td><td><input type='text' name='${att}_cost' readonly size='4'/></td><td>";
+	      form_input_number('characters', "$att", $character["$att"], 2, "updateCurrentBonuses();");
+	      echo "(";
+	      echo "<input type='text' name='{$att}_bonus' readonly size='3' value='-1'/>";
+	      echo ")</td></tr>\n";
+	    }
+            echo "<tr><td colspan='2'>Total cost:</td><td><input type='readonly' size='3' name='points'/></td></tr>\n";
+?>
+            </table> <!-- end attribute selection table -->
+	  </td>
+        </tr>
+        <tr>
+          <td>
+	    <table summary='Class selection table'>
+	      <tr>
+	        <th>Class</th>
+	        <th>Level</th>
+	      </tr>
+<?php
+	  for ($c = 1; $c <= 4; $c++) {
+	    echo "<tr>\n<td>";
+	    echo "<select name='class{$c}'>\n";
+	    echo "<option value='None'></option>\n";
+	    $source = $class_list[0][2];
+	    echo "<optgroup label=\"$source\">\n";
+	    foreach ($class_list as $cclass) {
+	      if (! ($cclass[1] > 0 && $c == 1)) {  // skip the prestiges  at 1st
+		if ($cclass[2] != $source) {
+		  $source = $cclass[2];
+		  echo "</optgroup>\n";
+		  echo "<optgroup label=\"$source\">\n";
+		}
+		if ($character["class{$c}"] == $cclass[0]) {
+		  echo "<option value=\"$cclass[0]\" selected>$cclass[0]</option>\n";
+		} else {
+		  echo "<option value=\"$cclass[0]\">$cclass[0]</option>\n";
+		}
+	      }
+	    }
+	    echo "</optgroup>\n";
+	    echo "</select>\n";
+	    echo "</td><td>";
+	    echo "<select name='level{$c}'>";
+	    for ($l = 0; $l <= 20; $l++) {
+	      if ($character["level{$c}"] == $l) {
+		echo "<option value='$l' selected>$l</option>\n";
+	      } else {
+		echo "<option value='$l'>$l</option>\n";
+	      }
+	    }
+	    echo "</select>\n";
+	    echo "</td>\n</tr>";
+	  }
+?>
+            </table>
+          </td>
+        </tr>
+      </table> <!-- end left column -->
+    </td>
+    <td>
+      <table summary='Right column'>
+        <tr>
+          <td>
+            <table summary='hit points'>
+	      <tr>
+	        <th>Hit points <a class='Data' onClick='showHelp("hit_points_help.php");'>[?]</a></th>
+	        <td><?= form_input_number('characters', "hp", $character["hp"], 4); ?></td>
+	      </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table summary='portrait'>
+<?php
+echo "<th>Portrait</th>\n";
+$portrait = $character['portrait'];
+$folder = dirname($portrait);
+echo "<td rowspan='3'><a onClick='pickImage(\"../images/pc_portraits\", \"portrait\", \"$folder\");'><img name='portrait' style='cursor:pointer; cursor: hand;' src='$portrait' alt='character portrait' width='127' height='148'/></a></td></tr>";
+echo "<tr><td>\n";
+echo "Click on image to change<br/>";
+form_input_readonly('characters', 'portrait', $character['portrait']);
+echo "</td></tr>\n";
+?>
+              <tr><td>Or click to upload new image<br/><input type="hidden" name="client_portrait" value="<?= $character[client_portrait] ?>"/><input type="hidden" name="MAX_FILE_SIZE" value="327680"/><input type='file' name='uploaded_portrait' value="<?= $character[uploaded_portrait] ?>"></td>
+  </tr>
+<?php
+	  echo "<th>Symbol</th>\n";
+$symbol = $character['symbol'];
+$folder = dirname($symbol);
+echo "<td rowspan='3'><a onClick='pickImage(\"../images/symbols\", \"symbol\", \"$folder\");'><img class='Data' name='symbol' src='$symbol' alt='character symbol' width='127' height='148'/></a></td></tr>";
+echo "<tr><td>\n";
+echo "Click on image to change<br/>";
+form_input_readonly('characters', 'symbol', $character[symbol]);
+echo "</td></tr>\n";
+?>
+              <tr><td>Or click to upload new image<br/><input type="hidden" name="client_symbol" value="<?= $character[client_symbol] ?>"/><input type="hidden" name="MAX_FILE_SIZE" value="327680"/><input type='file' name='uploaded_symbol' value="<?= $character[uploaded_symbol] ?>"></td></tr>
+	    </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table summary='Languages'>
+              <tr><th colspan=2>Languages</th></tr>
+<?php
+	  for ($c = 1; $c <= 7; $c += 2) {
+	    echo "<tr><td>";
+	    form_input_text('characters', "language_$c", $character["language_{$c}"]);
+	    echo "</td><td>";
+	    $n = $c + 1;
+	    form_input_text('characters', "language_$n", $character["language_{$n}"]);
+	    echo "</td></tr>\n";
+	  }
+?>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table summary='notes'>
+              <tr><th>Notes</th></tr>
+              <tr>
+	        <td>
+	          <textarea class='small' name='notes' rows='5' cols='40'><?= $character[notes] ?></textarea>
+	        </td>
+	      </tr>
+            </table> <!-- end table summary -->
+          </td>
+        </tr>
+      </table> <!-- end right column -->
+    </td>
+  </tr>
+</table> <!-- end uber table -->

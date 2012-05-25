@@ -1,0 +1,17 @@
+#! /usr/bin/perl -w
+
+$start = 0;
+while(<>) {
+  if (/<\/body>/i) {
+    exit;
+  }
+  if ($start) {
+    if ($_ !~ /^\s*$/) {
+      print;
+    }
+  }
+  if (/en-US/i) {
+      $start = 1;
+  }
+}
+

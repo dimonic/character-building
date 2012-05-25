@@ -1,0 +1,10 @@
+<img src="../images/maps/city of greyhawk.png" width="1571" height="2384" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image Map file created by GIMP Imagemap Plugin -->
+<!-- #$-:GIMP Imagemap Plugin by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.0 -->
+<!-- #$AUTHOR:Dominic Amann -->
+<area shape="poly" coords="854,1055,980,1075,974,949,890,952" alt="Grey College" href="javascript:showRegion(&amp;apos;Grey College&amp;apos;)" />
+</map>

@@ -1,0 +1,12 @@
+Making a new class.
+
+Add to 'class', with auto class_id
+Note class_id.
+
+Add to 'skill_list' (if existing class similar, use:
+
+"SELECT * FROM 'skill_list' WHERE 'class_id' = x INTO OUTFILE 'new_list'"
+
+then
+
+"LOAD DATA INFILE 'new_skill' INTO TABLE 'skill_list' (@dummy, description, skill_id) SET 'class_id' = x"
